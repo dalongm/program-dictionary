@@ -1,8 +1,0 @@
-{
-    "plugins": [ "github","theme-comscore","-twitter","-facebook"],
-    "pluginsConfig": {
-        "github": {
-            "url": "https://github.com/dalongm"
-        }
-    }
-}

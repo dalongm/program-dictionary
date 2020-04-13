@@ -1,6 +1,6 @@
 # 1.2 SHELL
 
-### 判断是否为空
+## 判断是否为空
 
 ```shell
 if [ -n "$APP_ID" ]; then
@@ -12,7 +12,7 @@ if [ -z "$APP_ID" ]; then
 fi
 ```
 
-### 获取参数
+## 获取参数
 
 ```shell
 #!/bin/bash
@@ -25,7 +25,7 @@ echo $!
 echo $0
 ```
 
-### 数组循环
+## 数组循环
 
 ```shell
 for type in ${TYPES[@]}; do
@@ -42,7 +42,7 @@ echo "数组元素个数为: ${#my_array[@]}"
 
 ```
 
-### 基本循环
+## 基本循环
 
 ```shell
 for ((i = 0; i < ${#TYPES[@]}; i++)); do
@@ -50,7 +50,7 @@ for ((i = 0; i < ${#TYPES[@]}; i++)); do
 done
 ```
 
-### 文件判断
+## 文件判断
 
 ```shell
 # 文件不存在
@@ -63,7 +63,7 @@ if [ ! -d "$folder"]; then
 fi
 ```
 
-### 数字大小判断
+## 数字大小判断
 
 ```shell
 if [ $num1 -gt $num2 ] ; then
@@ -73,7 +73,7 @@ else
 fi
 ```
 
-### 获取函数返回值
+## 获取函数返回值
 
 ```shell
 #!/bin/bash
@@ -93,7 +93,7 @@ echo "输入的两个数字之和为 $? !"
 
 
 
-### 字符串匹配
+## 字符串匹配
 
 **==比较**
 
@@ -135,7 +135,7 @@ fi
 - he.*：这里只允许包含he的字符串通过测试
 - ^he.*：这个表示是以he开头的字符串通过检测
 
-### 命令找不到（command not found）
+## 命令找不到（command not found）
 
 ```shell
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
@@ -144,7 +144,7 @@ source /etc/profile
 /bin/vi  /etc/profile
 ```
 
-### 文件内容删除（sed）
+## 文件内容删除（sed）
 
 ```shell
 FILE="/usr/local/test.path"
@@ -155,7 +155,7 @@ CONTENT_REG=${CONTENT//\//\\/}
 sed -i ${CONTENT_REG}/d ${FILE}
 ```
 
-### $ 变量含义
+## $ 变量含义
 
 linux中shell变量$#,$@,$0,$1,$2的含义解释: 
 
@@ -187,6 +187,3 @@ $0
 $1～$n 
 # 添加到Shell的各参数值
 ```
-
-## 
-

@@ -1,0 +1,42 @@
+{
+    "plugins": [
+        "github",
+        "theme-comscore",
+        "chapter-fold",
+        "code",
+        "-search",
+        "-lunr",
+        "search-pro",
+        "-sharing",
+        "sharing-plus"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/dalongm"
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": true,
+            "pocket": false,
+            "qq": false,
+            "qzone": true,
+            "twitter": false,
+            "weibo": true,
+            "all": [
+                "douban",
+                "facebook",
+                "google",
+                "instapaper",
+                "linkedin",
+                "twitter",
+                "weibo",
+                "messenger",
+                "qq",
+                "qzone",
+                "viber",
+                "whatsapp"
+            ]
+        }
+    }
+}

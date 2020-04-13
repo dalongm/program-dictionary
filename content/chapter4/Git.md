@@ -71,7 +71,7 @@ git config --global core.autocrlf input
 git config --global core.safecrlf true
 ```
 
-## 查看所有的commit提交记录
+## 查看所有的提交记录
 
 ```shell
 git log
@@ -157,3 +157,74 @@ git config --global i18n.logoutputencoding utf-8
 # 注释：设置LESS字符集为utf-8
 export LESSCHARSET=utf-8
 ```
+
+## Git LFS
+
+### 介绍
+
+> Git 大文件存储（Large File Storage，简称LFS）目的是更好地把大型二进制文件，比如音频文件、数据集、图像和视频等集成到 Git 的工作流中。我们知道，Git 存储二进制效率不高，因为它会压缩并存储二进制文件的所有完整版本，随着版本的不断增长以及二进制文件越来越多，这种存储方案并不是最优方案。而 LFS 处理大型二进制文件的方式是用文本指针替换它们，这些文本指针实际上是包含二进制文件信息的文本文件。文本指针存储在 Git 中，而大文件本身通过HTTPS托管在Git LFS服务器上。 
+
+### 安装
+
+```shell
+git lfs install
+
+	Updated git hooks.
+    Git LFS initialized.
+```
+
+### LFS追踪文件
+
+```shell
+git lfs track "*.zip"
+git lfs track "Anaconda3-4.4.0-Linux-x86_64.sh"
+```
+
+执行命令后，将会在项目中生成`.gitattributes`文件，该文件保存文件的追踪记录，需要将该文件推送到远程仓库当中。
+
+### 查看追踪规则
+
+```shell
+git lfs track
+
+    Listing tracked patterns
+        *.iso (.gitattributes)
+        grafana-6.4.3-1.x86_64.rpm (.gitattributes)
+    Listing excluded patterns
+```
+
+### 提交&推送
+
+与git基本操作一致，使用”git add“，”git commit“，”git push“命令。
+
+```shell
+# 添加
+git add Anaconda3-4.4.0-Linux-x86_64.sh
+# 提交
+git commit -m "添加大文件 Anaconda3-4.4.0-Linux-x86_64.sh"
+# 推送
+git push
+```
+
+### 查看追踪列表
+
+```shell
+git lfs ls-files
+
+	194faa7784 * grafana-6.4.3-1.x86_64.rpm
+```
+
+### 克隆&拉取
+
+与git基本操作一致，使用`git clone`,`git pull`命令。
+
+```shell
+# 克隆
+git clone git@gitlab.example.com:group/project.git
+# 拉取
+git lfs fetch origin master
+```
+
+
+
+[^1]:  https://docs.gitlab.com/ee/administration/lfs/manage_large_binaries_with_git_lfs.html 
