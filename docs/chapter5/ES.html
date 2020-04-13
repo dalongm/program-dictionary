@@ -424,13 +424,13 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="52-es">5.2 ES</h1>
-<h3 id="&#x67E5;&#x770B;mapping">&#x67E5;&#x770B;mapping</h3>
+<h2 id="&#x67E5;&#x770B;mapping">&#x67E5;&#x770B;mapping</h2>
 <pre><code class="lang-shell">curl -XGET &apos;127.0.0.1:9200/noah_app_access_20200101/_mapping/?pretty=true&apos;
 </code></pre>
-<h3 id="&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;">&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;</h3>
+<h2 id="&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;">&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;</h2>
 <pre><code class="lang-url">http://host:9200/_sql?sql=SELECT count(distinct(resource_id)) as num FROM index_*
 </code></pre>
-<h3 id="&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;">&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;</h3>
+<h2 id="&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;">&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;</h2>
 <p><strong>POST</strong> </p>
 <pre><code class="lang-url">http://host:9200/index_*/_search?pretty
 </code></pre>
@@ -439,7 +439,7 @@
     <span class="hljs-string">&quot;size&quot;</span>:<span class="hljs-number">1000</span>
 }
 </code></pre>
-<h3 id="&#x5220;&#x9664;&#x7D22;&#x5F15;">&#x5220;&#x9664;&#x7D22;&#x5F15;</h3>
+<h2 id="&#x5220;&#x9664;&#x7D22;&#x5F15;">&#x5220;&#x9664;&#x7D22;&#x5F15;</h2>
 <pre><code class="lang-shell">curl -XDELETE &apos;127.0.0.1:9200/index_*&apos;
 </code></pre>
 
@@ -485,7 +485,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.2 ES","level":"1.6.2","depth":2,"next":{"title":"5.3 HDFS","level":"1.6.3","depth":2,"path":"chapter5/HDFS.md","ref":"chapter5/HDFS.md","articles":[]},"previous":{"title":"5.1 Kafka","level":"1.6.1","depth":2,"path":"chapter5/Kafka.md","ref":"chapter5/Kafka.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"qq":false,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5/ES.md","mtime":"2020-04-13T08:34:28.042Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T10:34:25.320Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.2 ES","level":"1.6.2","depth":2,"next":{"title":"5.3 HDFS","level":"1.6.3","depth":2,"path":"chapter5/HDFS.md","ref":"chapter5/HDFS.md","articles":[]},"previous":{"title":"5.1 Kafka","level":"1.6.1","depth":2,"path":"chapter5/Kafka.md","ref":"chapter5/Kafka.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"qq":false,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5/ES.md","mtime":"2020-04-13T11:20:39.257Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T11:21:52.869Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
