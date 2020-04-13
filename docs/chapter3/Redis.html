@@ -1,0 +1,586 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.2 Redis · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter4/" />
+    
+    
+    <link rel="prev" href="MySQL.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章 Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/基础命令.html">
+            
+                <a href="../chapter1/基础命令.html">
+            
+                    
+                    1.1 基础命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/SHELL.html">
+            
+                <a href="../chapter1/SHELL.html">
+            
+                    
+                    1.2 SHELL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第二章 语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/Python.html">
+            
+                <a href="../chapter2/Python.html">
+            
+                    
+                    2.1 Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/Java.html">
+            
+                <a href="../chapter2/Java.html">
+            
+                    
+                    2.2 Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第三章 数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="MySQL.html">
+            
+                <a href="MySQL.html">
+            
+                    
+                    3.1 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="Redis.html">
+            
+                <a href="Redis.html">
+            
+                    
+                    3.2 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第四章 工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/Git.html">
+            
+                <a href="../chapter4/Git.html">
+            
+                    
+                    4.1 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第五章 大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/Kafka.html">
+            
+                <a href="../chapter5/Kafka.html">
+            
+                    
+                    5.1 Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/ES.html">
+            
+                <a href="../chapter5/ES.html">
+            
+                    
+                    5.2 ES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/HDFS.html">
+            
+                <a href="../chapter5/HDFS.html">
+            
+                    
+                    5.3 HDFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/Hive.html">
+            
+                <a href="../chapter5/Hive.html">
+            
+                    
+                    5.4 Hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../chapter5/Flume.html">
+            
+                <a href="../chapter5/Flume.html">
+            
+                    
+                    5.5 Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../END.html">
+            
+                <a href="../END.html">
+            
+                    
+                    结语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.2 Redis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="32-redis">3.2 Redis</h1>
+<h2 id="&#x5B89;&#x88C5;redis">&#x5B89;&#x88C5;Redis</h2>
+<pre><code class="lang-shell"># &#x4E0B;&#x8F7D;
+wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+# &#x89E3;&#x538B;
+tar xzf redis-5.0.5.tar.gz
+# &#x7F16;&#x8BD1;
+cd redis-5.0.5
+make
+
+# &#x5C06;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#x653E;&#x4E8E;/usr/local/redis&#x4E0B;
+mkdir /usr/local/redis
+cp src/redis-cli /usr/local/redis
+cp src/redis-server /usr/local/redis
+cp redis.conf /usr/local/redis
+</code></pre>
+<h2 id="&#x5141;&#x8BB8;&#x8FDC;&#x7A0B;">&#x5141;&#x8BB8;&#x8FDC;&#x7A0B;</h2>
+<p>&#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>vim /usr/local/redis/redis.conf</code>&#xFF0C;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x884C;&#x4FEE;&#x6539;&#xFF1A;</p>
+<pre><code class="lang-shell"># bind 127.0.0.1
+protected-mode no
+
+# &#x53D6;&#x6D88;&#x5B88;&#x62A4;&#x542F;&#x52A8;&#xFF0C;&#x7528;&#x4E8E;&#x5F00;&#x673A;&#x81EA;&#x542F;
+daemonize no
+</code></pre>
+<h2 id="&#x81EA;&#x542F;&#x914D;&#x7F6E;">&#x81EA;&#x542F;&#x914D;&#x7F6E;</h2>
+<ol>
+<li>&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x811A;&#x672C;<code>vim /etc/systemd/system/redis.service</code>&#xFF1A;</li>
+</ol>
+<pre><code class="lang-shell">[Unit]
+Description=Redis Server Manager
+After=syslog.target
+After=network.target
+
+[Service]
+# Type=simple
+PIDFile=/var/run/redis_6379.pid
+ExecStart=/usr/local/redis/redis-server /usr/local/redis/redis.conf
+ExecStop=/usr/local/redis/redis-cli shutdown
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<ol>
+<li>&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#xFF0C;&#x5F00;&#x673A;&#x542F;&#x52A8;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-shell">systemctl daemon-reload
+systemctl start redis.service
+systemctl enable redis.service
+</code></pre>
+<p>&#x6DFB;&#x52A0;<code>redis-cli</code>&#x8F6F;&#x94FE;&#x63A5;&#xFF1A;</p>
+<pre><code class="lang-shell">ln -s /usr/local/redis/redis-cli /usr/bin/redis-cli
+</code></pre>
+<h2 id="&#x5F00;&#x653E;&#x7AEF;&#x53E3;">&#x5F00;&#x653E;&#x7AEF;&#x53E3;</h2>
+<pre><code class="lang-shell">firewall-cmd --zone=public --add-port=6379/tcp --permanent
+firewall-cmd --reload
+iptables -L -n
+</code></pre>
+<h2 id="&#x57FA;&#x672C;&#x64CD;&#x4F5C;">&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h2>
+<pre><code class="lang-shell"># &#x67E5;&#x770B;&#x6240;&#x6709;key
+keys *
+# &#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;
+config get *
+</code></pre>
+<h2 id="&#x9519;&#x8BEF;">&#x9519;&#x8BEF;</h2>
+<ol>
+<li><p>&#x4F7F;&#x7528;<code>spring boot</code>&#x8FDE;&#x63A5;<code>redis</code>&#x53D1;&#x73B0;<code>redis</code>&#x4E2D;&#x6570;&#x636E;&#x65E0;&#x6545;&#x65E0;&#x89C4;&#x5F8B;&#x6E05;&#x7A7A;</p>
+<p> a. &#x4FEE;&#x6539;<code>redis service</code>&#x6587;&#x4EF6;<code>vim /etc/systemd/system/redis.service</code></p>
+<p> b. &#x4FEE;&#x6539;<code>redis</code>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x589E;&#x52A0;<code>logfile</code>&#x8DEF;&#x5F84;</p>
+<p> c. &#x4FEE;&#x6539;&#x7CFB;&#x7EDF;&#x65F6;&#x533A;</p>
+<p> &#x7136;&#x540E;&#x5C31;&#x672A;&#x51FA;&#x73B0;&#x5F53;&#x524D;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x672A;&#x786E;&#x5B9A;&#x95EE;&#x9898;&#x7684;&#x539F;&#x56E0;&#x3002;</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="MySQL.html" class="navigation navigation-prev " aria-label="Previous page: 3.1 MySQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter4/" class="navigation navigation-next " aria-label="Next page: 第四章 工具">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.2 Redis","level":"1.4.2","depth":2,"next":{"title":"第四章 工具","level":"1.5","depth":1,"path":"chapter4/README.md","ref":"chapter4/README.md","articles":[{"title":"4.1 Git","level":"1.5.1","depth":2,"path":"chapter4/Git.md","ref":"chapter4/Git.md","articles":[]}]},"previous":{"title":"3.1 MySQL","level":"1.4.1","depth":2,"path":"chapter3/MySQL.md","ref":"chapter3/MySQL.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"qq":false,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/Redis.md","mtime":"2020-04-13T09:23:43.571Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T10:34:25.320Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
