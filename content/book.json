@@ -13,7 +13,7 @@
         "simple-page-toc",
         "ancre-navigation",
         "pageview-count",
-        "custom-favicon"
+        "favicon"
     ],
     "pluginsConfig": {
         "github": {
@@ -51,6 +51,14 @@
             "maxDepth": 3,
             "skipFirstH1": true
         },
-        "favicon": "./images/favicon.ico"
+        "favicon": {
+            "shortcut": "/images/favicon.ico",
+            "bookmark": "/images/favicon.ico",
+            "appleTouch": "/images/favicon.ico",
+            "appleTouchMore": {
+                "120x120": "/images/favicon.ico",
+                "180x180": "/images/favicon.ico"
+            }
+        }
     }
 }
