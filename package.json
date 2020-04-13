@@ -12,10 +12,12 @@
   },
   "devDependencies": {},
   "scripts": {
+    "init": "gitbook init ./content",
     "build": "gitbook build ./content ./docs",
     "serve": "gitbook serve ./content ./docs",
     "plugin": "gitbook install ./content",
-    "push": "git push"
+    "push": "git push",
+    "deploy": "npm run build && git add . && git commit -m \"更新\" && git pull && git push"
   },
   "keywords": [],
   "author": "",

@@ -1,5 +1,7 @@
 # 3.2 Redis
 
+[TOC]
+
 ## 安装Redis
 
 ```shell

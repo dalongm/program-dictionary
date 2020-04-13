@@ -29,6 +29,18 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -276,6 +288,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/Maven.html">
+            
+                <a href="../chapter4/Maven.html">
+            
+                    
+                    4.2 Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -423,14 +448,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="52-es">5.2 ES</h1>
-<h2 id="&#x67E5;&#x770B;mapping">&#x67E5;&#x770B;mapping</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#52-es"><b></b>5.2 ES</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;mapping"><b></b>&#x67E5;&#x770B;mapping</a></li><li><span class="title-icon "></span><a href="#&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;"><b></b>&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;"><b></b>&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x7D22;&#x5F15;"><b></b>&#x5220;&#x9664;&#x7D22;&#x5F15;</a></li></ul></ul></div><a href="#52-es" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="52-es"><a name="52-es" class="anchor-navigation-ex-anchor" href="#52-es"><i class="fa fa-link" aria-hidden="true"></i></a>5.2 ES</h1>
+<p>[TOC]</p>
+<h2 id="&#x67E5;&#x770B;mapping"><a name="&#x67E5;&#x770B;mapping" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;mapping"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;mapping</h2>
 <pre><code class="lang-shell">curl -XGET &apos;127.0.0.1:9200/noah_app_access_20200101/_mapping/?pretty=true&apos;
 </code></pre>
-<h2 id="&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;">&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;</h2>
+<h2 id="&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;"><a name="&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;" class="anchor-navigation-ex-anchor" href="#&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x76EE;</h2>
 <pre><code class="lang-url">http://host:9200/_sql?sql=SELECT count(distinct(resource_id)) as num FROM index_*
 </code></pre>
-<h2 id="&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;">&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;</h2>
+<h2 id="&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;"><a name="&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x6570;&#x636E;</h2>
 <p><strong>POST</strong> </p>
 <pre><code class="lang-url">http://host:9200/index_*/_search?pretty
 </code></pre>
@@ -439,10 +465,12 @@
     <span class="hljs-string">&quot;size&quot;</span>:<span class="hljs-number">1000</span>
 }
 </code></pre>
-<h2 id="&#x5220;&#x9664;&#x7D22;&#x5F15;">&#x5220;&#x9664;&#x7D22;&#x5F15;</h2>
+<h2 id="&#x5220;&#x9664;&#x7D22;&#x5F15;"><a name="&#x5220;&#x9664;&#x7D22;&#x5F15;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x7D22;&#x5F15;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x7D22;&#x5F15;</h2>
 <pre><code class="lang-shell">curl -XDELETE &apos;127.0.0.1:9200/index_*&apos;
 </code></pre>
-
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; dalongm.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2020-04-14 00:32:20
+</span></footer>
                                 
                                 </section>
                             
@@ -485,7 +513,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.2 ES","level":"1.6.2","depth":2,"next":{"title":"5.3 HDFS","level":"1.6.3","depth":2,"path":"chapter5/HDFS.md","ref":"chapter5/HDFS.md","articles":[]},"previous":{"title":"5.1 Kafka","level":"1.6.1","depth":2,"path":"chapter5/Kafka.md","ref":"chapter5/Kafka.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"qq":false,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5/ES.md","mtime":"2020-04-13T11:20:39.257Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T11:36:29.885Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.2 ES","level":"1.6.2","depth":2,"next":{"title":"5.3 HDFS","level":"1.6.3","depth":2,"path":"chapter5/HDFS.md","ref":"chapter5/HDFS.md","articles":[]},"previous":{"title":"5.1 Kafka","level":"1.6.1","depth":2,"path":"chapter5/Kafka.md","ref":"chapter5/Kafka.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus","tbfed-pagefooter","simple-page-toc","ancre-navigation","pageview-count","custom-favicon"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy dalongm.top 2020","modify_label":"修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"./images/favicon.ico","theme-comscore":{},"pageview-count":{},"custom-favicon":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qzone","douban","facebook","google","instapaper","linkedin","messenger","qq","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":false,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5/ES.md","mtime":"2020-04-13T16:32:20.897Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T16:46:30.673Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -516,6 +544,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
         
     
         

@@ -29,6 +29,18 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -276,6 +288,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/Maven.html">
+            
+                <a href="../chapter4/Maven.html">
+            
+                    
+                    4.2 Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -423,39 +448,41 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="51-kafka">5.1 Kafka</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#51-kafka"><b></b>5.1 Kafka</a></li><ul><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;zookeeper"><b></b>&#x542F;&#x52A8;Zookeeper</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;kafka-broker"><b></b>&#x542F;&#x52A8;Kafka Broker</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;kafka-topics"><b></b>&#x67E5;&#x770B;kafka topics</a></li><li><span class="title-icon "></span><a href="#&#x65B0;&#x5EFA;topic"><b></b>&#x65B0;&#x5EFA;topic</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;kafka-topics"><b></b>&#x5220;&#x9664;kafka topics</a></li><li><span class="title-icon "></span><a href="#&#x4EA7;&#x751F;&#x6D88;&#x606F;"><b></b>&#x4EA7;&#x751F;&#x6D88;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x6536;&#x6D88;&#x606F;"><b></b>&#x63A5;&#x6536;&#x6D88;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;topic&#x4FE1;&#x606F;"><b></b>&#x67E5;&#x770B;topic&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;"><b></b>&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><b></b>&#x65E0;&#x6CD5;&#x542F;&#x52A8;</a></li></ul></ul></div><a href="#51-kafka" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="51-kafka"><a name="51-kafka" class="anchor-navigation-ex-anchor" href="#51-kafka"><i class="fa fa-link" aria-hidden="true"></i></a>5.1 Kafka</h1>
 <p>[TOC]</p>
-<h2 id="&#x542F;&#x52A8;zookeeper">&#x542F;&#x52A8;Zookeeper</h2>
+<h2 id="&#x542F;&#x52A8;zookeeper"><a name="&#x542F;&#x52A8;zookeeper" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;zookeeper"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;Zookeeper</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/zookeeper-server-start.sh /usr/local/kafka/config/zookeeper.properties &amp;
 </code></pre>
-<h2 id="&#x542F;&#x52A8;kafka-broker">&#x542F;&#x52A8;Kafka Broker</h2>
+<h2 id="&#x542F;&#x52A8;kafka-broker"><a name="&#x542F;&#x52A8;kafka-broker" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;kafka-broker"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;Kafka Broker</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties &amp;
 </code></pre>
-<h2 id="&#x67E5;&#x770B;kafka-topics">&#x67E5;&#x770B;kafka topics</h2>
+<h2 id="&#x67E5;&#x770B;kafka-topics"><a name="&#x67E5;&#x770B;kafka-topics" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;kafka-topics"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;kafka topics</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
 </code></pre>
-<h2 id="&#x65B0;&#x5EFA;topic">&#x65B0;&#x5EFA;topic</h2>
+<h2 id="&#x65B0;&#x5EFA;topic"><a name="&#x65B0;&#x5EFA;topic" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x5EFA;topic"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B0;&#x5EFA;topic</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/kafka-topics.sh --create --replication-factor 1 --partitions 1 --zookeeper localhost:2181 --topic ${topic}
 </code></pre>
-<h2 id="&#x5220;&#x9664;kafka-topics">&#x5220;&#x9664;kafka topics</h2>
+<h2 id="&#x5220;&#x9664;kafka-topics"><a name="&#x5220;&#x9664;kafka-topics" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;kafka-topics"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;kafka topics</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/kafka-topics.sh --delete --zookeeper localhost:2181 --topic ${topic}
 </code></pre>
-<h2 id="&#x4EA7;&#x751F;&#x6D88;&#x606F;">&#x4EA7;&#x751F;&#x6D88;&#x606F;</h2>
+<h2 id="&#x4EA7;&#x751F;&#x6D88;&#x606F;"><a name="&#x4EA7;&#x751F;&#x6D88;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x4EA7;&#x751F;&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EA7;&#x751F;&#x6D88;&#x606F;</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic ${topic}
 </code></pre>
-<h2 id="&#x63A5;&#x6536;&#x6D88;&#x606F;">&#x63A5;&#x6536;&#x6D88;&#x606F;</h2>
+<h2 id="&#x63A5;&#x6536;&#x6D88;&#x606F;"><a name="&#x63A5;&#x6536;&#x6D88;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x6536;&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A5;&#x6536;&#x6D88;&#x606F;</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --topic ${topic}
 </code></pre>
-<h2 id="&#x67E5;&#x770B;topic&#x4FE1;&#x606F;">&#x67E5;&#x770B;topic&#x4FE1;&#x606F;</h2>
+<h2 id="&#x67E5;&#x770B;topic&#x4FE1;&#x606F;"><a name="&#x67E5;&#x770B;topic&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;topic&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;topic&#x4FE1;&#x606F;</h2>
 <pre><code class="lang-shell">/usr/local/kafka/bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic ${topic}
 </code></pre>
-<h2 id="&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;">&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;</h2>
+<h2 id="&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;"><a name="&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x7F6E;&#x7EC4;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;</h2>
 <pre><code class="lang-shell">bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group test-group --reset-offsets --all-topics --to-earliest --execute
 bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group test-group --reset-offsets --topic ${topic} --to-earliest --execute
 </code></pre>
-<h2 id="&#x65E0;&#x6CD5;&#x542F;&#x52A8;">&#x65E0;&#x6CD5;&#x542F;&#x52A8;</h2>
+<h2 id="&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><a name="&#x65E0;&#x6CD5;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E0;&#x6CD5;&#x542F;&#x52A8;</h2>
 <h3 id=""> </h3>
-
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; dalongm.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2020-04-13 22:15:28
+</span></footer>
                                 
                                 </section>
                             
@@ -498,7 +525,7 @@ bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group test-grou
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.1 Kafka","level":"1.6.1","depth":2,"next":{"title":"5.2 ES","level":"1.6.2","depth":2,"path":"chapter5/ES.md","ref":"chapter5/ES.md","articles":[]},"previous":{"title":"第五章 大数据","level":"1.6","depth":1,"path":"chapter5/README.md","ref":"chapter5/README.md","articles":[{"title":"5.1 Kafka","level":"1.6.1","depth":2,"path":"chapter5/Kafka.md","ref":"chapter5/Kafka.md","articles":[]},{"title":"5.2 ES","level":"1.6.2","depth":2,"path":"chapter5/ES.md","ref":"chapter5/ES.md","articles":[]},{"title":"5.3 HDFS","level":"1.6.3","depth":2,"path":"chapter5/HDFS.md","ref":"chapter5/HDFS.md","articles":[]},{"title":"5.4 Hive","level":"1.6.4","depth":2,"path":"chapter5/Hive.md","ref":"chapter5/Hive.md","articles":[]},{"title":"5.5 Flume","level":"1.6.5","depth":2,"path":"chapter5/Flume.md","ref":"chapter5/Flume.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"qq":false,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5/Kafka.md","mtime":"2020-04-13T08:34:20.609Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T11:36:29.885Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.1 Kafka","level":"1.6.1","depth":2,"next":{"title":"5.2 ES","level":"1.6.2","depth":2,"path":"chapter5/ES.md","ref":"chapter5/ES.md","articles":[]},"previous":{"title":"第五章 大数据","level":"1.6","depth":1,"path":"chapter5/README.md","ref":"chapter5/README.md","articles":[{"title":"5.1 Kafka","level":"1.6.1","depth":2,"path":"chapter5/Kafka.md","ref":"chapter5/Kafka.md","articles":[]},{"title":"5.2 ES","level":"1.6.2","depth":2,"path":"chapter5/ES.md","ref":"chapter5/ES.md","articles":[]},{"title":"5.3 HDFS","level":"1.6.3","depth":2,"path":"chapter5/HDFS.md","ref":"chapter5/HDFS.md","articles":[]},{"title":"5.4 Hive","level":"1.6.4","depth":2,"path":"chapter5/Hive.md","ref":"chapter5/Hive.md","articles":[]},{"title":"5.5 Flume","level":"1.6.5","depth":2,"path":"chapter5/Flume.md","ref":"chapter5/Flume.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus","tbfed-pagefooter","simple-page-toc","ancre-navigation","pageview-count","custom-favicon"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy dalongm.top 2020","modify_label":"修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"./images/favicon.ico","theme-comscore":{},"pageview-count":{},"custom-favicon":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qzone","douban","facebook","google","instapaper","linkedin","messenger","qq","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":false,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5/Kafka.md","mtime":"2020-04-13T14:15:28.365Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T16:46:30.673Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -529,6 +556,10 @@ bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group test-grou
     
         
         <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
         
     
         

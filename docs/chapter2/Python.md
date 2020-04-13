@@ -1,5 +1,7 @@
 # 2.1 Python
 
+[TOC]
+
 ## 离线安装库
 
 ```shell
@@ -59,7 +61,3 @@ conda remove --force name
 ```shell
 conda install --use-local pytorch-1.0.0-py2.7_cuda9.0.176_cudnn7.4.1_1.tar.bz2
 ```
-
-
-
-# 

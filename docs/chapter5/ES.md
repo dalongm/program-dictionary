@@ -1,5 +1,7 @@
 # 5.2 ES
 
+[TOC]
+
 ## 查看mapping
 
 ```shell
