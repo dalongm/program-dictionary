@@ -19,5 +19,6 @@
     * [5.3 HDFS](chapter5/HDFS.md)
     * [5.4 Hive](chapter5/Hive.md)
     * [5.5 Flume](chapter5/Flume.md)
+    * [5.6 Zookeeper](chapter5/Zookeeper.md)
 * [结语](END.md)
 
