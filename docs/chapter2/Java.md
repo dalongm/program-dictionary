@@ -47,6 +47,55 @@ public static String readFileByStream(String fileName){
 
 使用`JSONObject`转化一遍。
 
+### JAVA参数
+
+```bash
+java -X
+    -Xmixed           混合模式执行 (默认)
+    -Xint             仅解释模式执行
+    -Xbootclasspath:<用 ; 分隔的目录和 zip/jar 文件>
+                      设置搜索路径以引导类和资源
+    -Xbootclasspath/a:<用 ; 分隔的目录和 zip/jar 文件>
+                      附加在引导类路径末尾
+    -Xbootclasspath/p:<用 ; 分隔的目录和 zip/jar 文件>
+                      置于引导类路径之前
+    -Xdiag            显示附加诊断消息
+    -Xnoclassgc       禁用类垃圾收集
+    -Xincgc           启用增量垃圾收集
+    -Xloggc:<file>    将 GC 状态记录在文件中 (带时间戳)
+    -Xbatch           禁用后台编译
+    -Xms<size>        设置初始 Java 堆大小，默认为物理内存的1/64
+    -Xmx<size>        设置最大 Java 堆大小，默认为物理内存的1/4
+    -Xss<size>        设置 Java 线程堆栈大小
+    -Xprof            输出 cpu 配置文件数据
+    -Xfuture          启用最严格的检查, 预期将来的默认值
+    -Xrs              减少 Java/VM 对操作系统信号的使用 (请参阅文档)
+    -Xcheck:jni       对 JNI 函数执行其他检查
+    -Xshare:off       不尝试使用共享类数据
+    -Xshare:auto      在可能的情况下使用共享类数据 (默认)
+    -Xshare:on        要求使用共享类数据, 否则将失败。
+    -XshowSettings    显示所有设置并继续
+    -XshowSettings:all
+                      显示所有设置并继续
+    -XshowSettings:vm 显示所有与 vm 相关的设置并继续
+    -XshowSettings:properties
+                      显示所有属性设置并继续
+    -XshowSettings:locale
+                      显示所有与区域设置相关的设置并继续
+
+-X 选项是非标准选项, 如有更改, 恕不另行通知。
+
+	-Xmn 			  新生代大小，通过这个值也可以得到老生代的大小：-Xmx减去-Xmn
+```
+
+`-Xss` 设置每个线程可使用的内存大小，即栈的大小。在相同物理内存下，减小这个值能生成更多的线程，当然操作系统对一个进程内的线程数还是有限制的，不能无限生成。线程栈的大小是个双刃剑，如果设置过小，可能会出现栈溢出，特别是在该线程内有递归、大的循环时出现溢出的可能性更大，如果该值设置过大，就有影响到创建栈的数量，如果是多线程的应用，就会出现内存溢出的错误。[^1]
+
+示例
+
+```bash
+-Xmx3550m -Xms3550m -Xmn2g -Xss128k
+```
+
 ## IDEA
 
 ### 开启控制台颜色
@@ -66,7 +115,7 @@ public static String readFileByStream(String fileName){
 
 为方便程序的安装与运行，将`JAR`与运行脚本打包为`RPM`包。
 
-### 开启SSL[^1]
+### 开启SSL[^2]
 
 1. 生成证书
 
@@ -187,7 +236,11 @@ management.endpoint.health.show-details=always
 
 ### 创建非Web项目
 
+### 运行参数
 
+```bash
+-Dspring.profiles.active=dev
+```
 
 ## Logback(Slf4j)配置文件
 
@@ -272,6 +325,5 @@ b) process based: pass -Dcom.sun.management.jmxremote.local.only=false
    on the java command line (attachee side)
 ```
 
-
-
-[^1]: springboot 2.X 配置SSL证书
+[^1]: [JVM优化之 -Xss -Xms -Xmx -Xmn 参数设置](https://blog.csdn.net/yrwan95/article/details/82826519)
+[^2]: springboot 2.X 配置SSL证书

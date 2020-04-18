@@ -4,6 +4,7 @@
 * [第一章 Linux](chapter1/README.md)
     * [1.1 基础命令](chapter1/基础命令.md)
     * [1.2 SHELL](chapter1/SHELL.md)
+    * [1.3 FAQ](chapter1/FAQ.md)
 * [第二章 语言](chapter2/README.md)
     * [2.1 Python](chapter2/Python.md)
     * [2.2 Java](chapter2/Java.md)
@@ -19,5 +20,7 @@
     * [5.3 HDFS](chapter5/HDFS.md)
     * [5.4 Hive](chapter5/Hive.md)
     * [5.5 Flume](chapter5/Flume.md)
+    * [5.6 Zookeeper](chapter5/Zookeeper.md)
+    * [5.7 Flink](chapter5/Flink.md)
 * [结语](END.md)
 

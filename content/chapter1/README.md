@@ -4,4 +4,6 @@
 
 * [1.2 SHELL](SHELL.md)
 
+* [1.3 FAQ](FAQ.md)
+
     
