@@ -21,6 +21,9 @@
     * [5.4 Hive](chapter5/Hive.md)
     * [5.5 Flume](chapter5/Flume.md)
     * [5.6 Zookeeper](chapter5/Zookeeper.md)
+<<<<<<< HEAD
     * [5.7 Flink](chapter5/Flink.md)
+=======
+>>>>>>> ccbdd429e81cb9a468789cc4d02ace6694ba8b2b
 * [结语](END.md)
 
