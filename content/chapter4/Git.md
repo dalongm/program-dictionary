@@ -211,7 +211,7 @@ git push
 ```shell
 git lfs ls-files
 
-	194faa7784 * grafana-6.4.3-1.x86_64.rpm
+194faa7784 * grafana-6.4.3-1.x86_64.rpm
 ```
 
 ### 克隆&拉取
@@ -223,6 +223,21 @@ git lfs ls-files
 git clone git@gitlab.example.com:group/project.git
 # 拉取
 git lfs fetch origin master
+```
+
+## 可执行权限
+
+```bash
+# 查看文件filename的权限
+git ls-files --stage filename
+> 100644 7365f0cb8734bd2031ddf800e90 0       filename
+
+# 增加文件filename的可执行权限
+git update-index --chmod +x filename
+
+# 再次查看文件filename的权限
+git ls-files --stage filename
+> 100755 7365f0cb8734bd2031ddf800e90 0       filename
 ```
 
 
