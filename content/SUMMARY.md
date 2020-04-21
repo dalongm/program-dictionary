@@ -22,5 +22,10 @@
     * [5.5 Flume](chapter5/Flume.md)
     * [5.6 Zookeeper](chapter5/Zookeeper.md)
     * [5.7 Flink](chapter5/Flink.md)
+<<<<<<< HEAD
+=======
+* [第六章 教程](chapter6/README.md)
+    * [6.1 Flink 中文课程](chapter6/Flink 中文课程.md)
+>>>>>>> 504b10fe338ac1b486f0d04b2528eeaa082bf715
 * [结语](END.md)
 
