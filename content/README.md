@@ -16,17 +16,16 @@
 * [第四章 工具](chapter4/README.md)
   * [4.1 Git](chapter4/Git.md)
   * [4.2 Maven](chapter4/Maven.md)
+  * [4.3 IDEA](chapter4/IDEA.md)
 * [第五章 大数据](chapter5/README.md)
   * [5.1 Kafka](chapter5/Kafka.md)
   * [5.2 ES](chapter5/ES.md)
   * [5.3 HDFS](chapter5/HDFS.md)
   * [5.4 Hive](chapter5/Hive.md)
   * [5.5 Flume](chapter5/Flume.md)
+  * [5.6 Zookeeper](chapter5/Zookeeper.md)
   * [5.7 Flink](chapter5/Flink.md)
-<<<<<<< HEAD
-=======
 * [第六章 教程](chapter6/README.md)
   * [6.1 Flink 中文课程](chapter6/Flink 中文课程.md)
->>>>>>> 504b10fe338ac1b486f0d04b2528eeaa082bf715
 * [结语](END.md)
 

@@ -3,3 +3,6 @@
 [4.1 Git](Git.md)
 
 [4.2 Maven](Maven.md)
+
+[4.3 IDEA](IDEA.md)
+

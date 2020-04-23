@@ -96,18 +96,7 @@ java -X
 -Xmx3550m -Xms3550m -Xmn2g -Xss128k
 ```
 
-## IDEA
 
-### 开启控制台颜色
-
-```shell
-# Edit Configurations，点击，找到VM options添加
--Dspring.output.ansi.enabled=ALWAYS
-```
-
-### 添加启动命令
-
-`Edit Configurations`->`Env Vars: "spring.profiles.active=dev"`
 
 ## Spring Boot
 
@@ -119,7 +108,7 @@ java -X
 
 1. 生成证书
 
-    ```cmd
+    ```bash
     keytool -genkey -keyalg RSA -keysize 2048 -validity 3650 -keystore application.keystore -storepass PASS@2019 -storetype PKCS12
     ```
 
@@ -235,6 +224,38 @@ management.endpoint.health.show-details=always
 ```
 
 ### 创建非Web项目
+
+1. 引入
+
+    ```xml
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    ```
+
+2. 禁用Banner
+
+    ```java
+    public static void main(String[] args) {
+        SpringApplication springApplication = new SpringApplication(DynamiccalculateApplication.class);
+        springApplication.setBannerMode(Banner.Mode.LOG);
+        springApplication.run(args);
+    }
+    ```
+
+3. 实现
+
+    ```java
+    public interface CommandLineRunner {
+    	/**
+    	 * Callback used to run the bean.
+    	 * @param args incoming main method arguments
+    	 * @throws Exception on error
+    	 */
+    	void run(String... args) throws Exception;
+    }
+    ```
 
 ### 运行参数
 
