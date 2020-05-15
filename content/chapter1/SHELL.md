@@ -1,3 +1,5 @@
+
+
 # 1.2 SHELL
 
 [TOC]
@@ -11,6 +13,11 @@ fi
 
 if [ -z "$APP_ID" ]; then
 	echo "is empty"
+fi
+
+if []; then
+elif []; then
+else
 fi
 ```
 

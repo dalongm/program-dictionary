@@ -34,7 +34,40 @@ ln -s /usr/local/bin/git /usr/bin/git
 git version
 ```
 
-## 修改默认编辑器
+## 基本操作
+
+```bash
+# 更新远程仓库链接
+git remote set-url origin xxxx
+
+# 推送指定分支到远端
+git pull <远程主机名> <远程分支名>:<本地分支名>
+
+# 拉取指定分支到本地
+git push <远程主机名> <本地分支名>:<远程分支名>
+```
+
+## 子模块
+
+```bash
+# 添加子模块
+git submodule add ${子模块仓库地址} ${子模块名称}
+
+# 拉取子模块
+# 方法一：正常的使用git clone命令，然后再使用 git submodule init 和git submodule update来获取子模块
+# 初始化子模块(只添加子模块版本的指针，文件夹是空的)
+git submodule init ${子模块名称}
+
+# 更新子模块
+git submodule update ${子模块名称}
+
+# 方法二：在使用git clone命令时，加上–recurse-submodules或–recursive 这样的递归参数
+git clone --recursive ${主仓库地址}
+```
+
+
+
+## .修改默认编辑器
 
 以sublime为例，需将`sublime_text.exe`的路径添加到环境变量中。
 
@@ -238,6 +271,12 @@ git update-index --chmod +x filename
 # 再次查看文件filename的权限
 git ls-files --stage filename
 > 100755 7365f0cb8734bd2031ddf800e90 0       filename
+
+# 忽略权限更改
+# 当前仓库
+git config core.filemode false
+# 全局
+git config --global core.fileMode false
 ```
 
 
