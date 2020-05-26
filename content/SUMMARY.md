@@ -16,6 +16,7 @@
     * [4.1 Git](chapter4/Git.md)
     * [4.2 Maven](chapter4/Maven.md)
     * [4.3 IDEA](chapter4/IDEA.md)
+    * [4.4 Nginx](chapter4/Nginx.md)
 * [第五章 大数据](chapter5/README.md)
     * [5.1 Kafka](chapter5/Kafka.md)
     * [5.2 ES](chapter5/ES.md)
