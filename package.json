@@ -18,7 +18,7 @@
     "serve": "gitbook serve ./content ./docs",
     "plugin": "gitbook install ./content",
     "push": "git push",
-    "deploy": "npm run build && git add . && git commit -m \"更新\" && git pull && git push"
+    "deploy": "npm run build && copy CNAME docs\\ && git add . && git commit -m \"更新\" && git pull && git push"
   },
   "keywords": [],
   "author": "",

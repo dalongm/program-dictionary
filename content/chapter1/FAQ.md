@@ -34,5 +34,21 @@ iotop -oP
 
 ```bash
 free -h
+
+# 查看进程占用
+cat /proc/【进程id】/status
+
+VmPeak: 11008236 kB
+VmSize: 11008140 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:   5126716 kB
+VmRSS:   5126716 kB
+VmData:  9433616 kB
+VmStk:       132 kB
+VmExe:     22168 kB
+VmLib:      3200 kB
+VmPTE:     15012 kB
+VmSwap:        0 kB
 ```
 
