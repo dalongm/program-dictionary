@@ -52,12 +52,12 @@
             "skipFirstH1": true
         },
         "favicon": {
-            "shortcut": "/images/favicon.ico",
-            "bookmark": "/images/favicon.ico",
-            "appleTouch": "/images/favicon.ico",
+            "shortcut": "images/favicon.ico",
+            "bookmark": "images/favicon.ico",
+            "appleTouch": "images/favicon.ico",
             "appleTouchMore": {
-                "120x120": "/images/favicon.ico",
-                "180x180": "/images/favicon.ico"
+                "120x120": "images/favicon.ico",
+                "180x180": "images/favicon.ico"
             }
         }
     }
