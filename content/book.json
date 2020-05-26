@@ -53,7 +53,12 @@
         },
         "favicon": {
             "shortcut": "images/favicon.ico",
-            "bookmark": "images/favicon.ico"
+            "bookmark": "images/favicon.ico",
+            "appleTouch": "images/apple-touch-icon.png",
+            "appleTouchMore": {
+                "120x120": "images/apple-touch-icon-120x120.png",
+                "180x180": "images/apple-touch-icon-180x180.png"
+            }
         }
     }
 }
