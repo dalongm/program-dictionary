@@ -6,4 +6,6 @@
 
 * [1.3 FAQ](FAQ.md)
 
+* [1.4 Windows](Windows.md)
+
     

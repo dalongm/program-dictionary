@@ -5,6 +5,7 @@
     * [1.1 基础命令](chapter1/基础命令.md)
     * [1.2 SHELL](chapter1/SHELL.md)
     * [1.3 FAQ](chapter1/FAQ.md)
+    * [1.4 Windows](chapter1/Windows.md)
 * [第二章 语言](chapter2/README.md)
     * [2.1 Python](chapter2/Python.md)
     * [2.2 Java](chapter2/Java.md)

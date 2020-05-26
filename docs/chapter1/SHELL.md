@@ -100,8 +100,6 @@ funWithReturn
 echo "输入的两个数字之和为 $? !"
 ```
 
-
-
 ## 字符串匹配
 
 **==比较**
@@ -164,6 +162,26 @@ CONTENT_REG=${CONTENT//\//\\/}
 sed -i ${CONTENT_REG}/d ${FILE}
 ```
 
+### 替换`JAVA_HOME`
+
+```bash
+PROFILE=/etc/profile
+# 配置环境变量
+# 不包含已有的JAVA_HOME
+JAVA_HOME=/usr/java/jdk1.8.0_212-amd64
+if [ $(grep -c "export JAVA_HOME=" $PROFILE) -eq 0 ]; then
+    echo "export JAVA_HOME=${JAVA_HOME}" >>$PROFILE
+    echo "export JRE_HOME=\${JAVA_HOME}/jre" >>$PROFILE
+    echo "export CLASSPATH=.:\${JAVA_HOME}/lib:\${JRE_HOME}/lib" >>$PROFILE
+    echo "export PATH=\${PATH}:\${JAVA_HOME}/bin" >>$PROFILE
+else
+	JAVA_HOME_REG=${JAVA_HOME//\//\\/}
+    sed -i "s/^export JAVA_HOME.*\$/export JAVA_HOME=$JAVA_HOME_REG/g" $PROFILE
+fi
+```
+
+
+
 ## $ 变量含义
 
 linux中shell变量$#,$@,$0,$1,$2的含义解释: 
@@ -196,3 +214,16 @@ $0
 $1～$n 
 # 添加到Shell的各参数值
 ```
+
+## 获取目录下的文件夹
+
+```bash
+ls -al $1 | awk '/^d/ {print $NF}'
+```
+
+## 获取目录下的文件
+
+```bash
+ls -al $1 | awk '/^-/ {print $NF}'
+```
+

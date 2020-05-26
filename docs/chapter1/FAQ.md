@@ -22,3 +22,17 @@ systemctl daemon-reexec
 systemctl start systemd-logind
 ```
 
+## 系统监控
+
+### 磁盘占用
+
+```bash
+iotop -oP
+```
+
+### 内存
+
+```bash
+free -h
+```
+

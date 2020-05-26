@@ -111,3 +111,10 @@ bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group test-grou
 ```
 
 ## 无法启动
+
+### ERROR Shutdown broker because all log dirs in /tmp/kafka-logs have failed
+
+1. 删除`/tmp/kafka-logs`下的`offset`和`consume`相关文件，重启。此方法有可能造成数据丢失。
+2. 修改`advertised.listeners=PLAINTEXT://:9092`，重启
+3. 修改`log.dirs=/tmp/kafka-logs`，重启
+

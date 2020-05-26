@@ -45,6 +45,15 @@ git pull <远程主机名> <远程分支名>:<本地分支名>
 
 # 拉取指定分支到本地
 git push <远程主机名> <本地分支名>:<远程分支名>
+
+# 取消commit但保留add
+git reset --soft HEAD^
+
+# 取消commit和add
+git reset HEAD^
+
+# 删除commit和add代码，恢复到上次的提交状态
+git reset HEAD^
 ```
 
 ## 子模块
