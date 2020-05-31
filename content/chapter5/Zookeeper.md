@@ -30,6 +30,11 @@ Description=Apache ZooKeeper highly reliable distributed coordination
 After=network.target
 
 [Service]
+Type=simple
+User=root
+Group=root
+Restart=always
+RestartSec=1
 ExecStart=/usr/local/zookeeper/bin/zkServer.sh start-foreground
 ExecStop=/usr/local/zookeeper/bin/zkServer.sh stop
 
