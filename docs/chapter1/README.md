@@ -8,4 +8,6 @@
 
 * [1.4 Windows](Windows.md)
 
+* [1.5 Ubuntu](Ubuntu.md)
+
     
