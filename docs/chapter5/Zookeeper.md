@@ -61,3 +61,17 @@ systemctl stop zookeeper.service
 systemctl start zookeeper.service
 ```
 
+## `JVM`参数
+
+在`bin`下新增`java.env`文件，并添加可执行权限。
+
+`/usr/local/zookeeper/bin/java.env`
+
+```bash
+#!/bin/bash
+base_dir=$(dirname $0)
+
+export KAFKA_HEAP_OPTS=1024
+export ZK_CLIENT_HEAP=256
+```
+

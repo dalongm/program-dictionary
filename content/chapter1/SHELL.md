@@ -215,6 +215,46 @@ $1～$n
 # 添加到Shell的各参数值
 ```
 
+### 特殊用法
+
+```bash
+${ }的一些特异功能
+
+定义一个变量：
+file=/dir1/dir2/dir3/my.file.txt
+可以用${ }分别替换获得不同的值：
+${file#*/} 拿掉第一个 / 及其左边的字符串：dir1/dir2/dir3/my.file.txt
+${file##*/} 拿掉最后一个 / 及其左边的字符串：my.file.txt
+${file#*.} 拿掉第一个 . 及其左边的字符串：file.txt
+${file##*.} 拿掉最后一个 . 及其左边的字符串：txt
+${file%/*} 拿掉最后一个 / 及其右边的字符串：/dir1/dir2/dir3
+${file%%/*} 拿掉第一个 / 及其右边的字符串：(空值)
+${file%.*} 拿掉最后一个 . 及其右边的字符串：/dir1/dir2/dir3/my.file
+${file%%.*} 拿掉第一个 . 及其右边的字符串：/dir1/dir2/dir3/my
+记忆的方法：
+# 去掉左边(键盘上 # 在 $ 的左边)
+% 去掉右边(在键盘上 % 在 $ 的右边)
+单一符号是最小匹配，两个符号是最大匹配。
+${file:0:5} 提取最左边的 5 个字节：/dir1
+${file:5:5} 提取第 5 个字节右边的连续 5 个字节：/dir2
+也可以对变量值里的字符串作替换：
+${file/dir/path} 将第一个 dir 替换为 path：/path1/dir2/dir3/my.file.txt
+${file//dir/path} 将全部 dir 替换为 path：/path1/path2/path3/my.file.txt
+利用${ }还可针对不同的变量状态赋值(未设定、空值、非空值)： 
+${file-my.file.txt} 若 $file 未设定，则使用 my.file.txt 作传回值。(空值及非空值时不作处理) 
+${file:-my.file.txt} 若 $file 未设定或为空值，则使用 my.file.txt 作传回值。(非空值时不作处理)
+${file+my.file.txt} 若 $file 设为空值或非空值，均使用 my.file.txt 作传回值。(未设定时不作处理)
+${file:+my.file.txt} 若 $file 为非空值，则使用 my.file.txt 作传回值。(未设定及空值时不作处理)
+${file=my.file.txt} 若 $file 未设定，则使用 my.file.txt 作传回值，同时将 $file 赋值为 my.file.txt。 (空值及非空值时不作处理)
+${file:=my.file.txt} 若 $file 未设定或为空值，则使用 my.file.txt 作传回值，同时将 $file 赋值为 my.file.txt。 (非空值时不作处理)
+${file?my.file.txt} ：若 $file 未设定，则将 my.file.txt 输出至 STDERR。(空值及非空值时不作处理)
+${file:?my.file.txt} ：若 $file 未设定或为空值，则将 my.file.txt 输出至 STDERR。(非空值时不作处理)
+以上的理解在于，一定要分清楚 unset 与 null 及 non-null 这三种赋值状态。
+一般而言，与 null 有关，若不带 : 的话，null 不受影响，若带 : 则连 null 也受影响。
+${#var} 可计算出变量值的长度：
+${#file} 可得到 27，/dir1/dir2/dir3/my.file.txt 刚好是 27 个字节。
+```
+
 ## 获取目录下的文件夹
 
 ```bash
