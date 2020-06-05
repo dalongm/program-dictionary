@@ -267,3 +267,66 @@ ls -al $1 | awk '/^d/ {print $NF}'
 ls -al $1 | awk '/^-/ {print $NF}'
 ```
 
+## Expect命令
+
+> [Linux expect详解](https://www.jianshu.com/p/2fcdf764f464)
+
+新建用户，免密自身脚本。
+
+`main.sh`
+
+```bash
+#!/bin/bash
+# main.sh
+
+BASE_DIR=$(readlink -f $(dirname $0))
+NAME="hello"
+
+cd ${BASE_DIR}
+adduser $NAME
+
+echo "$NAME" | passwd --stdin $NAME
+
+# 添加账户到root组
+usermod -a -G root $NAME
+
+su -l $NAME -c "expect ${BASE_DIR}/ssh.sh $NAME"
+```
+
+`ssh.sh`
+
+```bash
+#!/usr/bin/expect
+# ssh.sh
+
+# $argc 参数数据
+if {$argc < 1} {
+    puts "Usage:expect username"
+    exit 1
+}
+
+set timeout 30
+set host "localhost"
+
+# $argv 0 第0个参数值
+set username [lindex $argv 0]
+set yes "yes"
+
+spawn ssh-keygen
+expect "*Enter file in which to save the key*" {send "\r"}
+expect "*Enter passphrase*" {send "\r"}
+expect "*Enter same passphrase*" {send "\r"}
+
+# 添加公钥
+exec bash -c "cat /home/$username/.ssh/id_rsa.pub >>/home/$username/.ssh/authorized_keys"
+
+# 修改.ssh目录及文件权限
+exec bash -c "chmod 700 /home/$username/.ssh/"
+exec bash -c "chmod 600 /home/$username/.ssh/authorized_keys"
+
+# 处理第一次登录确认提示
+spawn ssh $username@$host
+expect "*Are you sure you want*" {send "$yes\r exit\r"}
+expect eof
+```
+
