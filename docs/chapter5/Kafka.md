@@ -2,6 +2,8 @@
 
 [TOC]
 
+以Kafka 2.11版本为例，部分操作不同版本不一样。
+
 ## 安装
 
 ```shell
@@ -386,9 +388,40 @@ log4j.additivity.kafka.authorizer.logger=false
 ### 重置组消费位置
 
 ```shell
-bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group test-group --reset-offsets --all-topics --to-earliest --execute
-bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group test-group --reset-offsets --topic ${topic} --to-earliest --execute
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group ${groupname} --reset-offsets --all-topics --to-earliest --execute
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group ${groupname} --reset-offsets --topic ${topic} --to-earliest --execute
 ```
+
+### 查看所有消费组
+
+```bash
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+```
+
+### 查看消费组消费状态
+
+```bash
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group ${groupname}
+```
+
+> TOPIC         PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+> api_access      0          3088921         3102980         14059           -               -               -
+
+TOPIC：该group里消费的topic名称
+
+PARTITION：分区编号
+
+CURRENT-OFFSET：该分区当前消费到的offset
+
+LOG-END-OFFSET：该分区当前latest offset
+
+LAG：消费滞后区间，为LOG-END-OFFSET-CURRENT-OFFSET，具体大小需要看应用消费速度和生产者速度，一般过大则可能出现消费跟不上，需要引起应用注意
+
+CONSUMER-ID：server端给该分区分配的consumer编号
+
+HOST：消费者所在主机
+
+CLIENT-ID：消费者id，一般由应用指定
 
 ## 无法启动
 
