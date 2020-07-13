@@ -67,15 +67,15 @@ options 为命令行选项，sar命令常用选项如下：
 ```bash
 -A：所有报告的总和
 
--u：输出[CPU](http://lovesoo.org/tag/cpu)使用情况的统计信息
+-u：输出[CPU]使用情况的统计信息
 
 -v：输出inode、文件和其他内核表的统计信息
 
 -d：输出每一个块设备的活动信息
 
--r：输出[内存](http://lovesoo.org/tag/内存)和交换空间的统计信息
+-r：输出[内存]和交换空间的统计信息
 
--b：显示[I/O](http://lovesoo.org/tag/io)和传送速率的统计信息
+-b：显示[I/O]和传送速率的统计信息
 
 -a：文件读写情况
 
