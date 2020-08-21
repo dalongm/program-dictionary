@@ -69,7 +69,7 @@ mysql > exit;
 
 ```shell
 mysql > use mysql;
-mysql > GRANT ALL PRIVILEGES ON *.* TO root@"%" IDENTIFIED BY "new_password"new_password;
+mysql > GRANT ALL PRIVILEGES ON *.* TO root@"%" IDENTIFIED BY "new_password";
 mysql > flush privileges;
 mysql > exit;
 service mysqld restart

@@ -168,6 +168,40 @@ git push origin :refs/tags/v1.4-lw
 git checkout 2.0.0
 ```
 
+## 分支
+
+```bash
+# 切换到创建分支的基础分支
+git checkout develop
+
+# 创建本地新分支 'dev-01'
+git branch dev-01
+
+# 查看分支，创建成功
+git branch -a
+
+# 检查仓库名称
+git remote
+
+# 把新分支推送到远程
+git push origin dev-01
+```
+
+## 远程关联
+
+```bash
+# 将当前分支与远程某分支关联
+git branch --set-upstream-to=origin/dev-01
+
+# 查看远程关联情况
+git branch -vv
+
+# 推送
+git push origin dev-01
+```
+
+
+
 ## 修改 comment
 
 ```shell
@@ -179,6 +213,32 @@ git commit --amend
 ```shell
 git clean -df
 ```
+
+## 统计代码行数
+
+统计代码行数，从2020-01-01到2020-07-30的代码行数（排除dependence目录）
+
+```bash
+git log --pretty=tformat: --since="2020-01-01" --until="2020-07-30" --numstat -- . ":(exclude)dependence"| awk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s new lines: %s\n",add,subs,loc }'
+```
+
+统计个人代码行数
+
+```bash
+git log  --author="songyang" --since="2020-01-01" --until="2020-07-30" --pretty=tformat:  --numstat -- . ":(exclude)static/built" ":(exclude)static/bower_components" | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'  
+```
+
+>
+>
+>author: 作者，
+>
+>since: 起始时间
+>
+>until: 结束时间
+>
+>-- . ":(exclude)folderName" 排除文件夹
+>
+>-- . ":(exclude)folderName1" ":(exclude)folderName2" 排除多个文件夹
 
 ## 常见问题
 
@@ -199,6 +259,8 @@ git config --global i18n.logoutputencoding utf-8
 # 注释：设置LESS字符集为utf-8
 export LESSCHARSET=utf-8
 ```
+
+
 
 ## Git LFS
 
