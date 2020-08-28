@@ -1,0 +1,929 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.1 Java 与 Osquery 证书 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../END.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章 Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/基础命令.html">
+            
+                <a href="../chapter1/基础命令.html">
+            
+                    
+                    1.1 基础命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/SHELL.html">
+            
+                <a href="../chapter1/SHELL.html">
+            
+                    
+                    1.2 SHELL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/FAQ.html">
+            
+                <a href="../chapter1/FAQ.html">
+            
+                    
+                    1.3 系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/Windows.html">
+            
+                <a href="../chapter1/Windows.html">
+            
+                    
+                    1.4 Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/Ubuntu.html">
+            
+                <a href="../chapter1/Ubuntu.html">
+            
+                    
+                    1.5 Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第二章 语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/Python.html">
+            
+                <a href="../chapter2/Python.html">
+            
+                    
+                    2.1 Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/Java.html">
+            
+                <a href="../chapter2/Java.html">
+            
+                    
+                    2.2 Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/Go.html">
+            
+                <a href="../chapter2/Go.html">
+            
+                    
+                    2.3 Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第三章 数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/MySQL.html">
+            
+                <a href="../chapter3/MySQL.html">
+            
+                    
+                    3.1 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/Redis.html">
+            
+                <a href="../chapter3/Redis.html">
+            
+                    
+                    3.2 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第四章 工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/Git.html">
+            
+                <a href="../chapter4/Git.html">
+            
+                    
+                    4.1 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/Maven.html">
+            
+                <a href="../chapter4/Maven.html">
+            
+                    
+                    4.2 Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/IDEA.html">
+            
+                <a href="../chapter4/IDEA.html">
+            
+                    
+                    4.3 IDEA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/Nginx.html">
+            
+                <a href="../chapter4/Nginx.html">
+            
+                    
+                    4.4 Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第五章 大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/Kafka.html">
+            
+                <a href="../chapter5/Kafka.html">
+            
+                    
+                    5.1 Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/ES.html">
+            
+                <a href="../chapter5/ES.html">
+            
+                    
+                    5.2 ES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/HDFS.html">
+            
+                <a href="../chapter5/HDFS.html">
+            
+                    
+                    5.3 HDFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/Hive.html">
+            
+                <a href="../chapter5/Hive.html">
+            
+                    
+                    5.4 Hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../chapter5/Flume.html">
+            
+                <a href="../chapter5/Flume.html">
+            
+                    
+                    5.5 Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../chapter5/Zookeeper.html">
+            
+                <a href="../chapter5/Zookeeper.html">
+            
+                    
+                    5.6 Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../chapter5/Flink.html">
+            
+                <a href="../chapter5/Flink.html">
+            
+                    
+                    5.7 Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    第六章 教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter6/Flink 中文课程.html">
+            
+                <a href="../chapter6/Flink 中文课程.html">
+            
+                    
+                    6.1 Flink 中文课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第七章 博文
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="Java与Osquery TLS证书.html">
+            
+                <a href="Java与Osquery TLS证书.html">
+            
+                    
+                    7.1 Java 与 Osquery 证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../END.html">
+            
+                <a href="../END.html">
+            
+                    
+                    结语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.1 Java 与 Osquery 证书</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#java&#x4E0E;osquery&#x8BC1;&#x4E66;"><b></b>Java&#x4E0E;Osquery&#x8BC1;&#x4E66;</a></li><ul><li><span class="title-icon "></span><a href="#&#x76EE;&#x7684;"><b></b>&#x76EE;&#x7684;</a></li><li><span class="title-icon "></span><a href="#&#x751F;&#x6210;keystore&#x6587;&#x4EF6;"><b></b>&#x751F;&#x6210;KeyStore&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;"><b></b>&#x83B7;&#x53D6;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;</a></li><ul><li><span class="title-icon "></span><a href="#keytool&#x521B;&#x5EFA;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><b></b>keytool&#x521B;&#x5EFA;&#x516C;&#x94A5;&#x51ED;&#x8BC1;</a></li><li><span class="title-icon "></span><a href="#openssl&#x8FDE;&#x63A5;&#x83B7;&#x53D6;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><b></b>OPENSSL&#x8FDE;&#x63A5;&#x83B7;&#x53D6;&#x516C;&#x94A5;&#x51ED;&#x8BC1;</a></li></ul><li><span class="title-icon "></span><a href="#spring-boot&#x4F7F;&#x7528;keystore"><b></b>Spring Boot&#x4F7F;&#x7528;KeyStore</a></li><li><span class="title-icon "></span><a href="#osquery&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><b></b>Osquery&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x51ED;&#x8BC1;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><b></b>&#x53C2;&#x8003;&#x8D44;&#x6599;</a></li></ul></ul></div><a href="#java&#x4E0E;osquery&#x8BC1;&#x4E66;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="java&#x4E0E;osquery&#x8BC1;&#x4E66;"><a name="java&#x4E0E;osquery&#x8BC1;&#x4E66;" class="anchor-navigation-ex-anchor" href="#java&#x4E0E;osquery&#x8BC1;&#x4E66;"><i class="fa fa-link" aria-hidden="true"></i></a>Java&#x4E0E;Osquery&#x8BC1;&#x4E66;</h1>
+<p>[TOC]</p>
+<h2 id="&#x76EE;&#x7684;"><a name="&#x76EE;&#x7684;" class="anchor-navigation-ex-anchor" href="#&#x76EE;&#x7684;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x7684;</h2>
+<p>&#x5728;&#x4F7F;&#x7528;<code>Java</code>&#x91C7;&#x96C6;<code>Osquery</code>&#x7AEF;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x56E0;&#x4E3A;<code>TLS</code>&#x8BC1;&#x4E66;&#x95EE;&#x9898;&#x56F0;&#x6270;&#x4E86;&#x5F88;&#x4E45;&#xFF0C;&#x4E00;&#x76F4;&#x51FA;&#x73B0;<code>Request error: certificate verify failed</code>&#xFF0C;&#x8BE6;&#x60C5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-bash">I0828 14:19:27.860253 30918 database.cpp:563] Checking database version <span class="hljs-keyword">for</span> migration
+W0828 14:19:32.998385 30918 init.cpp:686] Error reading config: Request error: certificate verify failed
+I0828 14:19:33.026228 30918 events.cpp:863] Event publisher not enabled: auditeventpublisher: Publisher disabled via configuration
+I0828 14:19:33.026298 30918 events.cpp:863] Event publisher not enabled: syslog: Publisher disabled via configuration
+</code></pre>
+<p>&#x672A;&#x627E;&#x5230;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#x535A;&#x6587;&#x8BF4;&#x660E;&#xFF0C;&#x4E8E;&#x662F;&#x6574;&#x7406;&#x6B64;&#x6587;&#x3002;</p>
+<h2 id="&#x751F;&#x6210;keystore&#x6587;&#x4EF6;"><a name="&#x751F;&#x6210;keystore&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;keystore&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;KeyStore&#x6587;&#x4EF6;</h2>
+<pre><code class="lang-bash">keytool -genkey -validity 36600 -alias www.test.cn -keyalg RSA -keystore test.keystore
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF1A;
+-genkey&#x8868;&#x793A;&#x751F;&#x6210;&#x5BC6;&#x94A5;
+-validity&#x6307;&#x5B9A;&#x8BC1;&#x4E66;&#x6709;&#x6548;&#x671F;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;36600&#x5929;
+-alias&#x6307;&#x5B9A;&#x522B;&#x540D;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;www.test.cn
+-keyalg&#x6307;&#x5B9A;&#x7B97;&#x6CD5;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;RSA
+-keystore&#x6307;&#x5B9A;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;test.keystore</p>
+<p><strong>&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#xFF1A;</strong></p>
+<pre><code class="lang-bash">&#x8F93;&#x5165;keystore&#x5BC6;&#x7801;&#xFF1A;  
+&#x518D;&#x6B21;&#x8F93;&#x5165;&#x65B0;&#x5BC6;&#x7801;:  
+&#x60A8;&#x7684;&#x540D;&#x5B57;&#x4E0E;&#x59D3;&#x6C0F;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;  
+  [Unknown]&#xFF1A;  CN  
+&#x60A8;&#x7684;&#x7EC4;&#x7EC7;&#x5355;&#x4F4D;&#x540D;&#x79F0;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;  
+  [Unknown]&#xFF1A;  CN
+&#x60A8;&#x7684;&#x7EC4;&#x7EC7;&#x540D;&#x79F0;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;  
+  [Unknown]&#xFF1A;  www.test.cn  
+&#x60A8;&#x6240;&#x5728;&#x7684;&#x57CE;&#x5E02;&#x6216;&#x533A;&#x57DF;&#x540D;&#x79F0;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;  
+  [Unknown]&#xFF1A;  BJ  
+&#x60A8;&#x6240;&#x5728;&#x7684;&#x5DDE;&#x6216;&#x7701;&#x4EFD;&#x540D;&#x79F0;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;  
+  [Unknown]&#xFF1A;  BJ  
+&#x8BE5;&#x5355;&#x4F4D;&#x7684;&#x4E24;&#x5B57;&#x6BCD;&#x56FD;&#x5BB6;&#x4EE3;&#x7801;&#x662F;&#x4EC0;&#x4E48;  
+  [Unknown]&#xFF1A;  CN  
+CN=CN, OU=CN, O=www.test.cn, L=BJ, ST=BJ, C=CN &#x6B63;&#x786E;&#x5417;&#xFF1F;  
+  [&#x5426;]&#xFF1A;  Y
+</code></pre>
+<p>&#x8FD9;&#x513F;&#x7684;&#x5BC6;&#x7801;&#x4E3A;&#xFF1A;123456</p>
+<p>&#x5728;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x540C;&#x76EE;&#x5F55;&#x4E0B;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;<code>test.keystore</code>&#x6587;&#x4EF6;&#x3002;</p>
+<h2 id="&#x83B7;&#x53D6;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;"><a name="&#x83B7;&#x53D6;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;</h2>
+<p>&#x5149;&#x6709;KeyStore&#x6587;&#x4EF6;&#x662F;&#x4E0D;&#x591F;&#x7684;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x8BC1;&#x4E66;&#x6587;&#x4EF6;&#xFF0C;&#x8BC1;&#x4E66;&#x624D;&#x662F;&#x76F4;&#x63A5;&#x63D0;&#x4F9B;&#x7ED9;&#x5916;&#x754C;&#x4F7F;&#x7528;&#x7684;&#x516C;&#x94A5;&#x51ED;&#x8BC1;&#x3002;</p>
+<p>&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x5DF2;&#x6709;keystore&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;<code>keytool</code>&#x751F;&#x6210;&#xFF1B;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x6CA1;&#x6709;keystore&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;<code>openssl</code>&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x3002;</p>
+<h3 id="keytool&#x521B;&#x5EFA;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><a name="keytool&#x521B;&#x5EFA;&#x516C;&#x94A5;&#x51ED;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#keytool&#x521B;&#x5EFA;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>keytool&#x521B;&#x5EFA;&#x516C;&#x94A5;&#x51ED;&#x8BC1;</h3>
+<pre><code class="lang-bash">keytool -export -keystore test.keystore -alias www.test.cn -file test.cer -rfc
+</code></pre>
+<p>&#x67E5;&#x770B;&#x516C;&#x94A5;&#x51ED;&#x8BC1;</p>
+<pre><code class="lang-bash">cat test.cer
+</code></pre>
+<blockquote>
+<pre><code>-----BEGIN CERTIFICATE-----
+MIIDlzCCAn+gAwIBAgIULTkYO65dkEg2o0mHM6ZMqWsK5w4wDQYJKoZIhvcNAQEL
+BQAwWzELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExGDAWBgNVBAoM
+D29zcXVlcnktdGVzdGluZzEdMBsGA1UEAwwUb3NxdWVyeS11bml0dGVzdHMtY2Ew
+HhcNMjAwMjExMjEzMzMzWhcNMzAwMjExMjEzMzMzWjBbMQswCQYDVQQGEwJVUzET
+MBEGA1UECAwKQ2FsaWZvcm5pYTEYMBYGA1UECgwPb3NxdWVyeS10ZXN0aW5nMR0w
+ggEPADCCAQoCggEBAOKMqGZCm+QuTu+QjNCG3cl42g763RBmp9Xn3SzIPinUgbWz
+nNBdgzlwkjmRBnevuIEMkLFSSVyH9J44sLj/5vBvwq0upJZv/mZwwb+fBkPlek1n
+KRqoPZs/smqVWLQjz6vWsxqS5DKyzd1kyv+hBOkPkybpYlMFC9UyhPkYWAwJ95TL
+4Ag69qCymsGLqa+Ii/lpo5JJ4t41quBZYXqogz01N5c/w/hifKTx0ba/UTW/zMls
+xsugmwZsMMn/uIoFg23CIns38RHzBQEkyDHHt8cCAwEAAaNTMFEwHQYDVR0OBBYE
+FMhAbnhX45+2kR+Ch/idK9dNB1kAMB8GA1UdIwQYMBaAFMhAbnhX45+2kR+Ch/id
+K9dNB1kAMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAMrFOgO3
+x9CdWIjKYB2LaA46EEEzLu/2fqfqoIutGVV1g0/WZ4m3roS2d1w+qFemGIAXbypf
+yQj2kLpu6++3xvHylWgpa3IoQimZs0x6Kafqe6Gz4iEKg4lSmFXR1zLhXJeX9QMg
++HqTZMlDoen4K+Gd+kYA5ky2t7auS5mHYa3pL0m3TuKUTO6+Y5WH8SEdo4bcNsUk
++D9AmV9Nsmm91mE6xgf+sFxlQpf7bZsFhqceIiApUujR3MSpq9lHC1fdVkaD6ViV
+4Lxx7odIhaxQ2NQ32qYDqn3Ieu7vdUdgVry++CzGsv342IMU7FKuYAWD3GFo+z9Y
+s3oPBKzj3Spr7H4=
+-----END CERTIFICATE-----
+</code></pre></blockquote>
+<h3 id="openssl&#x8FDE;&#x63A5;&#x83B7;&#x53D6;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><a name="openssl&#x8FDE;&#x63A5;&#x83B7;&#x53D6;&#x516C;&#x94A5;&#x51ED;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#openssl&#x8FDE;&#x63A5;&#x83B7;&#x53D6;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>OPENSSL&#x8FDE;&#x63A5;&#x83B7;&#x53D6;&#x516C;&#x94A5;&#x51ED;&#x8BC1;</h3>
+<pre><code class="lang-bash">openssl s_client -connect <span class="hljs-variable">${hostname}</span>:<span class="hljs-variable">${port}</span>
+
+<span class="hljs-comment"># &#x4F8B;&#x5982;</span>
+openssl s_client -connect 192.168.1.100:8080
+</code></pre>
+<blockquote>
+<pre><code>CONNECTED(00000114)
+Can&apos;t use SSL_get_servername
+depth=0 C = US, ST = California, O = osquery-testing, CN = osquery-unittests-ca
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = US, ST = California, O = osquery-testing, CN = osquery-unittests-ca
+verify return:1
+---
+Certificate chain
+ 0 s:C = US, ST = California, O = osquery-testing, CN = osquery-unittests-ca
+   i:C = US, ST = California, O = osquery-testing, CN = osquery-unittests-ca
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDlzCCAn+gAwIBAgIULTkYO65dkEg2o0mHM6ZMqWsK5w4wDQYJKoZIhvcNAQEL
+BQAwWzELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExGDAWBgNVBAoM
+D29zcXVlcnktdGVzdGluZzEdMBsGA1UEAwwUb3NxdWVyeS11bml0dGVzdHMtY2Ew
+HhcNMjAwMjExMjEzMzMzWhcNMzAwMjExMjEzMzMzWjBbMQswCQYDVQQGEwJVUzET
+MBEGA1UECAwKQ2FsaWZvcm5pYTEYMBYGA1UECgwPb3NxdWVyeS10ZXN0aW5nMR0w
+ggEPADCCAQoCggEBAOKMqGZCm+QuTu+QjNCG3cl42g763RBmp9Xn3SzIPinUgbWz
+nNBdgzlwkjmRBnevuIEMkLFSSVyH9J44sLj/5vBvwq0upJZv/mZwwb+fBkPlek1n
+KRqoPZs/smqVWLQjz6vWsxqS5DKyzd1kyv+hBOkPkybpYlMFC9UyhPkYWAwJ95TL
+4Ag69qCymsGLqa+Ii/lpo5JJ4t41quBZYXqogz01N5c/w/hifKTx0ba/UTW/zMls
+xsugmwZsMMn/uIoFg23CIns38RHzBQEkyDHHt8cCAwEAAaNTMFEwHQYDVR0OBBYE
+FMhAbnhX45+2kR+Ch/idK9dNB1kAMB8GA1UdIwQYMBaAFMhAbnhX45+2kR+Ch/id
+K9dNB1kAMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAMrFOgO3
+x9CdWIjKYB2LaA46EEEzLu/2fqfqoIutGVV1g0/WZ4m3roS2d1w+qFemGIAXbypf
+yQj2kLpu6++3xvHylWgpa3IoQimZs0x6Kafqe6Gz4iEKg4lSmFXR1zLhXJeX9QMg
++HqTZMlDoen4K+Gd+kYA5ky2t7auS5mHYa3pL0m3TuKUTO6+Y5WH8SEdo4bcNsUk
++D9AmV9Nsmm91mE6xgf+sFxlQpf7bZsFhqceIiApUujR3MSpq9lHC1fdVkaD6ViV
+4Lxx7odIhaxQ2NQ32qYDqn3Ieu7vdUdgVry++CzGsv342IMU7FKuYAWD3GFo+z9Y
+s3oPBKzj3Spr7H4=
+-----END CERTIFICATE-----
+subject=C = US, ST = California, O = osquery-testing, CN = osquery-unittests-ca
+
+issuer=C = US, ST = California, O = osquery-testing, CN = osquery-unittests-ca
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 1411 bytes and written 419 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 5F4869F53DD054F1EF3E9CBF98F09693FE41CA3AA29F1B06FF2F4C2A88B084B1
+    Session-ID-ctx:
+    Master-Key: 2C4C6F5D9DF2072163AC516522A52505EE111CB19EC912201BED6FD6155B312B670F43EDCBC6732DB32BCB2C50C5EFFA
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1598581214
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: yes
+---
+</code></pre></blockquote>
+<p>&#x5C06;<code>-----BEGIN CERTIFICATE-----</code>&#x4EE5;&#x53CA;<code>-----END CERTIFICATE-----</code>&#x5305;&#x62EC;&#x7684;&#x5185;&#x5BB9;&#x4FDD;&#x5B58;&#x5230;&#x6587;&#x4EF6;<code>test.cer</code>&#x4E2D;&#xFF0C;&#x5373;</p>
+<pre><code>-----BEGIN CERTIFICATE-----
+MIIDlzCCAn+gAwIBAgIULTkYO65dkEg2o0mHM6ZMqWsK5w4wDQYJKoZIhvcNAQEL
+BQAwWzELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExGDAWBgNVBAoM
+D29zcXVlcnktdGVzdGluZzEdMBsGA1UEAwwUb3NxdWVyeS11bml0dGVzdHMtY2Ew
+HhcNMjAwMjExMjEzMzMzWhcNMzAwMjExMjEzMzMzWjBbMQswCQYDVQQGEwJVUzET
+MBEGA1UECAwKQ2FsaWZvcm5pYTEYMBYGA1UECgwPb3NxdWVyeS10ZXN0aW5nMR0w
+ggEPADCCAQoCggEBAOKMqGZCm+QuTu+QjNCG3cl42g763RBmp9Xn3SzIPinUgbWz
+nNBdgzlwkjmRBnevuIEMkLFSSVyH9J44sLj/5vBvwq0upJZv/mZwwb+fBkPlek1n
+KRqoPZs/smqVWLQjz6vWsxqS5DKyzd1kyv+hBOkPkybpYlMFC9UyhPkYWAwJ95TL
+4Ag69qCymsGLqa+Ii/lpo5JJ4t41quBZYXqogz01N5c/w/hifKTx0ba/UTW/zMls
+xsugmwZsMMn/uIoFg23CIns38RHzBQEkyDHHt8cCAwEAAaNTMFEwHQYDVR0OBBYE
+FMhAbnhX45+2kR+Ch/idK9dNB1kAMB8GA1UdIwQYMBaAFMhAbnhX45+2kR+Ch/id
+K9dNB1kAMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAMrFOgO3
+x9CdWIjKYB2LaA46EEEzLu/2fqfqoIutGVV1g0/WZ4m3roS2d1w+qFemGIAXbypf
+yQj2kLpu6++3xvHylWgpa3IoQimZs0x6Kafqe6Gz4iEKg4lSmFXR1zLhXJeX9QMg
++HqTZMlDoen4K+Gd+kYA5ky2t7auS5mHYa3pL0m3TuKUTO6+Y5WH8SEdo4bcNsUk
++D9AmV9Nsmm91mE6xgf+sFxlQpf7bZsFhqceIiApUujR3MSpq9lHC1fdVkaD6ViV
+4Lxx7odIhaxQ2NQ32qYDqn3Ieu7vdUdgVry++CzGsv342IMU7FKuYAWD3GFo+z9Y
+s3oPBKzj3Spr7H4=
+-----END CERTIFICATE-----
+</code></pre><h2 id="spring-boot&#x4F7F;&#x7528;keystore"><a name="spring-boot&#x4F7F;&#x7528;keystore" class="anchor-navigation-ex-anchor" href="#spring-boot&#x4F7F;&#x7528;keystore"><i class="fa fa-link" aria-hidden="true"></i></a>Spring Boot&#x4F7F;&#x7528;KeyStore</h2>
+<p>&#x5C06;<code>test.keystore</code>&#x653E;&#x4E8E;<code>Spring Boot</code>&#x5DE5;&#x7A0B;&#x7684;<code>src/main/resources</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4FEE;&#x6539;Java&#x7684;Spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>application.yml</code>&#xFF08;<code>application.properties</code>&#x540C;&#x7406;&#xFF09;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">server:</span>
+<span class="hljs-attr">  port:</span> <span class="hljs-number">8080</span>
+<span class="hljs-attr">  ssl:</span>
+<span class="hljs-attr">    key-store:</span> classpath:test.keystore
+<span class="hljs-attr">    key-store-type:</span> JKS
+<span class="hljs-attr">    key-store-password:</span> <span class="hljs-number">123456</span>
+</code></pre>
+<h2 id="osquery&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><a name="osquery&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x51ED;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#osquery&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x51ED;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>Osquery&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x51ED;&#x8BC1;</h2>
+<p>&#x5C06;<code>test.cer</code>&#x590D;&#x5236;&#x5230;<code>osquery</code>&#x6240;&#x5728;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;<code>osqueryd</code>&#x542F;&#x52A8;&#x53C2;&#x6570;<code>tls_server_certs</code>&#x6307;&#x5411;&#x6539;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x5728;&#x5B98;&#x7F51;&#x4E2D;TLS&#x516C;&#x94A5;&#x51ED;&#x8BC1;&#x540E;&#x7F00;&#x4E3A;<code>pem</code>&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x8FD9;&#x513F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C06;<code>cer</code>&#x540E;&#x7F00;&#x4FEE;&#x6539;&#x4E3A;<code>pem</code>&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-bash">sudo osqueryd \
+    --enroll_secret_path=enroll_secret.txt \
+    --tls_server_certs=test.cer \
+    --tls_hostname=192.168.1.100:8080 \
+    --host_identifier=uuid \
+    --enroll_tls_endpoint=/enroll \
+    --config_plugin=tls \
+    --config_tls_endpoint=/config \
+    --config_tls_refresh=10 \
+    --disable_distributed=<span class="hljs-literal">false</span> \
+    --distributed_plugin=tls \
+    --distributed_interval=3 \
+    --distributed_tls_max_attempts=3 \
+    --logger_plugin=tls \
+    --logger_tls_endpoint=/<span class="hljs-built_in">log</span> \
+    --logger_tls_period=10
+</code></pre>
+<h2 id="&#x53C2;&#x8003;&#x8D44;&#x6599;"><a name="&#x53C2;&#x8003;&#x8D44;&#x6599;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x8D44;&#x6599;</h2>
+<p><strong>Osquery&#x5B98;&#x7F51;&#xFF1A;</strong><a href="https://osquery.io/" target="_blank">https://osquery.io/</a></p>
+<p><strong>Osquery&#x68C0;&#x6D4B;&#x5165;&#x4FB5;&#x75D5;&#x8FF9;&#xFF1A;</strong><a href="https://evilanne.github.io/2019/02/20/Osquery%E6%A3%80%E6%B5%8B%E5%85%A5%E4%BE%B5%E7%97%95%E8%BF%B9/" target="_blank">https://evilanne.github.io/2019/02/20/Osquery%E6%A3%80%E6%B5%8B%E5%85%A5%E4%BE%B5%E7%97%95%E8%BF%B9/</a></p>
+<p><strong>&#x8BC1;&#x4E66;&#x751F;&#x6210;</strong>&#xFF1A;<a href="https://blog.csdn.net/liyong313/article/details/84595695" target="_blank">https://blog.csdn.net/liyong313/article/details/84595695</a> </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; dalongm.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2020-08-28 14:24:39
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第七章 博文">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../END.html" class="navigation navigation-next " aria-label="Next page: 结语">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.1 Java 与 Osquery 证书","level":"1.8.1","depth":2,"next":{"title":"结语","level":"1.9","depth":1,"path":"END.md","ref":"END.md","articles":[]},"previous":{"title":"第七章 博文","level":"1.8","depth":1,"path":"chapter7/README.md","ref":"chapter7/README.md","articles":[{"title":"7.1 Java 与 Osquery 证书","level":"1.8.1","depth":2,"path":"chapter7/Java与Osquery TLS证书.md","ref":"chapter7/Java与Osquery TLS证书.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["github","theme-comscore","chapter-fold","code","-search","-lunr","search-pro","-sharing","sharing-plus","tbfed-pagefooter","simple-page-toc","ancre-navigation","pageview-count","favicon"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy dalongm.top 2020","modify_label":"修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/dalongm"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"theme-comscore":{},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qzone","douban","facebook","google","instapaper","linkedin","messenger","qq","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":false,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter7/Java与Osquery TLS证书.md","mtime":"2020-08-28T06:24:39.774Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T06:27:25.528Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -263,6 +263,15 @@ management.endpoint.health.show-details=always
 -Dspring.profiles.active=dev
 ```
 
+## 驼峰转下划线
+
+```properties
+# 添加配置
+spring.jackson.property-naming-strategy=CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES
+```
+
+
+
 ## Logback(Slf4j)配置文件
 
 在`Spring Boot`中默认使用`Logback`作为日志插件，`Logback`的默认配置文件为`logback-spring.xml`，文件内容示例如下。
