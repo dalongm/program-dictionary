@@ -15,6 +15,10 @@ I0828 14:19:33.026298 30918 events.cpp:863] Event publisher not enabled: syslog:
 
 未找到相关的问题博文说明，于是整理此文。
 
+## 适用范围
+
+初步测试，支持`Osquery <= 4.1.2`。高版本会报错，推测更改了`TLS`验证方式。
+
 ## 生成KeyStore文件
 
 ```bash
