@@ -355,5 +355,16 @@ b) process based: pass -Dcom.sun.management.jmxremote.local.only=false
    on the java command line (attachee side)
 ```
 
+
+
+## Fastjson
+
+
+
+
+
+
+
+
 [^1]: [JVM优化之 -Xss -Xms -Xmx -Xmn 参数设置](https://blog.csdn.net/yrwan95/article/details/82826519)
 [^2]: springboot 2.X 配置SSL证书

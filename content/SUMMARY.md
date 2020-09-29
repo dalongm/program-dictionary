@@ -19,6 +19,8 @@
   - [4.2 Maven](chapter4/Maven.md)
   - [4.3 IDEA](chapter4/IDEA.md)
   - [4.4 Nginx](chapter4/Nginx.md)
+  - [4.5 虚拟机](chapter4/Vm.md)
+  - [4.6 Docker](chapter4/Docker.md)
 - [第五章 大数据](chapter5/README.md)
   - [5.1 Kafka](chapter5/Kafka.md)
   - [5.2 ES](chapter5/ES.md)

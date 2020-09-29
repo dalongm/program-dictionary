@@ -18,5 +18,11 @@ mvn package -DskipTests
 mvn clean package -U
 ```
 
-## 
+## 查看依赖树
+
+```bash
+mvn dependency:tree
+```
+
+
 
