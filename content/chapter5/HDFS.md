@@ -5,19 +5,26 @@
 ## 退出安全模式
 
 ```shell
-bin/hadoop dfsadmin -safemode leave
+hdfs dfsadmin -safemode leave
 ```
 
 ## 进入安全模式
 
 ```shell
-bin/hadoop dfsadmin -safemode enter
+hdfs dfsadmin -safemode enter
 ```
 
 ## 恢复edits不一致
 
 ```shell
-bin/hadoop namenode -recover
+hdfs namenode -recover
+```
+
+NAMENODE自己不会合并edits文件
+可以用命令合并：
+
+```bash
+hdfs dfsadmin -saveNamespace
 ```
 
 在HDFS中，提供了fsck命令，用于检查HDFS上文件和目录的健康状态、获取文件的block信息和位置信息等。

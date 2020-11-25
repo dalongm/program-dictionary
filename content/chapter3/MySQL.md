@@ -115,10 +115,23 @@ ON DUPLICATE KEY UPDATE b=VALUES(b);
 DELETE FROM table_name WHERE type is NULL;
 ```
 
-## 查看连接
+## 修改最大连接
 
-```mysql
-show full processlist;
+```bash
+[root@test ~]#  ulimit -n
+1024
+
+[root@test ~]# vim /etc/security/limits.conf
+open_files_limit = 65535
+
+[root@test ~]# vim /usr/lib/systemd/system/mysqld.service
+LimitNOFILE=65535
+LimitNPROC=65535
+
+systemctl daemon-reload
+systemctl restart  mysqld.service
+
+mysql> show variables like "max_connections";
 ```
 
 ## 查看状态

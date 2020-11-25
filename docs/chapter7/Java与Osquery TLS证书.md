@@ -17,9 +17,13 @@ I0828 14:19:33.026298 30918 events.cpp:863] Event publisher not enabled: syslog:
 
 ## 适用范围
 
-初步测试，支持`Osquery <= 4.1.2`。高版本会报错，推测更改了`TLS`验证方式。
+支持所有的`Osquery`版本，高于`4.1.2`版本会验证`名字与姓氏`是否与服务端的`IP`或`主机名`一致，不一致则报错，所以在生成证书时需要指定`名字与姓氏`为服务端的`IP`或`主机名`。
+
+> [已解决] 初步测试，支持`Osquery <= 4.1.2`。高版本会报错，推测更改了`TLS`验证方式。
 
 ## 生成KeyStore文件
+
+### 交互生成
 
 ```bash
 keytool -genkey -validity 36600 -alias www.test.cn -keyalg RSA -keystore test.keystore
@@ -38,24 +42,40 @@ keytool -genkey -validity 36600 -alias www.test.cn -keyalg RSA -keystore test.ke
 输入keystore密码：  
 再次输入新密码:  
 您的名字与姓氏是什么？  
-  [Unknown]：  CN  
+  [Unknown]：  127.0.0.1  
 您的组织单位名称是什么？  
-  [Unknown]：  CN
+  [Unknown]：  
 您的组织名称是什么？  
-  [Unknown]：  www.test.cn  
+  [Unknown]：    
 您所在的城市或区域名称是什么？  
-  [Unknown]：  BJ  
+  [Unknown]：    
 您所在的州或省份名称是什么？  
-  [Unknown]：  BJ  
+  [Unknown]：    
 该单位的两字母国家代码是什么  
-  [Unknown]：  CN  
-CN=CN, OU=CN, O=www.test.cn, L=BJ, ST=BJ, C=CN 正确吗？  
+  [Unknown]：    
+CN=127.0.0.1, OU=, O=, L=, ST=, C= 正确吗？  
   [否]：  Y  
 ```
 
 这儿的密码为：123456
 
 在命令执行的同目录下就会生成一个`test.keystore`文件。
+
+### 一次生成
+
+```bash
+keytool -genkey -alias www.test.cn -keypass 123456 -keyalg RSA -keysize 1024 -validity 36600 -keystore  test.keystore -storepass 123456 -dname "CN=127.0.0.1, OU=, O=, L=, ST=, C="
+```
+
+
+
+### 查看信息
+
+```bash
+keytool -list  -v -keystore test.keystore -storepass 123456
+```
+
+
 
 ## 获取自签名证书
 
@@ -65,9 +85,19 @@ CN=CN, OU=CN, O=www.test.cn, L=BJ, ST=BJ, C=CN 正确吗？
 
 ### keytool创建公钥凭证
 
+#### 交互生成
+
 ```bash
 keytool -export -keystore test.keystore -alias www.test.cn -file test.cer -rfc
 ```
+
+#### 一次生成
+
+```bash
+keytool -export -keystore test.keystore -storepass 123456 -alias www.test.cn -file test.cer -rfc
+```
+
+
 
 查看公钥凭证
 
@@ -243,8 +273,10 @@ sudo osqueryd \
 
 ## 参考资料
 
-**Osquery官网：**https://osquery.io/
+**Osquery官网：** https://osquery.io/
 
-**Osquery检测入侵痕迹：**https://evilanne.github.io/2019/02/20/Osquery%E6%A3%80%E6%B5%8B%E5%85%A5%E4%BE%B5%E7%97%95%E8%BF%B9/
+**Osquery检测入侵痕迹：** https://evilanne.github.io/2019/02/20/Osquery%E6%A3%80%E6%B5%8B%E5%85%A5%E4%BE%B5%E7%97%95%E8%BF%B9/
 
-**证书生成**：https://blog.csdn.net/liyong313/article/details/84595695
+**证书生成：** https://blog.csdn.net/liyong313/article/details/84595695
+
+**证书验证失败：**  https://github.com/osquery/osquery/issues/3303

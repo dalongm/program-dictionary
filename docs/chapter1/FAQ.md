@@ -91,7 +91,64 @@ options 为命令行选项，sar命令常用选项如下：
 ### 查看网速
 
 ```bash
-sar -n DEV 1 100 
+sar -n DEV 1 100
 ```
 
-### 
+### 重启失败
+
+#### init: /dev/initctl: no such file or directory
+
+```bash
+mkfifo /dev/initctl
+reboot -f
+```
+
+
+
+## ulimit修改
+
+`root`用户需要明确指定用户名，其余用户可以用`*`代替。
+
+`vim /etc/security/limits.conf`
+
+```
+root soft nofile 65535
+root hard nofile 65535
+```
+
+此时重启并不生效，`root`用户使用`ulimit -a`查看`limit`仍然是`1024`，但是使用`su -l root -c "ulimit -a"`查看`limit`却是设置的`65535`。
+
+需要再启用SSH的PAM登录，然后才在`ssh Session`中生效。
+
+`vim /etc/pam.d/sshd`
+
+```
+#%PAM-1.0
+auth       required pam_sepermit.so
+auth       include      password-auth
+account    required     pam_nologin.so
+account    include      password-auth
+password   include      password-auth
+# pam_selinux.so close should be the first session rule
+session    required     pam_selinux.so close
+session    required     pam_loginuid.so
+# pam_selinux.so open should only be followed by sessions to be executed in the user context
+session    required     pam_selinux.so open env_params
+session    optional     pam_keyinit.so force revoke
+session    include      password-auth
+```
+
+`vim /etc/ssh/sshd_config`
+
+```
+UsePAM yes
+```
+
+重启ssh服务
+
+```
+service sshd restart
+```
+
+
+
