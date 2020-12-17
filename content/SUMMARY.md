@@ -33,4 +33,5 @@
   - [6.1 Flink 中文课程](chapter6/Flink 中文课程.md)
 - [第七章 博文](chapter7/README.md)
   - [7.1 Java 与 Osquery 证书](chapter7/Java与Osquery TLS证书.md)
+  - [7.2 spark-submit提交PySpark任务py-files参数](chapter7/spark-submit py-files.md)
 - [结语](END.md)
