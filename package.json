@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "deploy": "^1.0.3",
+    "gitbook-cli": "^2.3.2",
     "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-pageview-count": "^1.0.1",
     "gitbook-plugin-theme-comscore": "^0.0.3"
   },
   "devDependencies": {},

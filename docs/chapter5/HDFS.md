@@ -86,4 +86,9 @@ Directory /data05/block is in an inconsistent state: cluster Id is incompatible 
 
 4. 重启
 
+## 合并edits
+
+```bash
+hdfs dfsadmin -saveNamespace
+```
 
