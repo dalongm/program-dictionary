@@ -2,9 +2,9 @@
 
 ## 用户访问HTTP服务时序图
 
-<!-- ![Kerberos](Kerberos.svg) -->
+![Kerberos](Kerberos.svg)
 
-```plantuml
+```bash
 @startuml osquery
 ' hide footbox
 
