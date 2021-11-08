@@ -29,6 +29,7 @@
   - [5.5 Flume](chapter5/Flume.md)
   - [5.6 Zookeeper](chapter5/Zookeeper.md)
   - [5.7 Flink](chapter5/Flink.md)
+  - [5.8 Kerberos](chapter5/Kerberos.md)
 - [第六章 教程](chapter6/README.md)
   - [6.1 Flink 中文课程](chapter6/Flink 中文课程.md)
 - [第七章 博文](chapter7/README.md)
