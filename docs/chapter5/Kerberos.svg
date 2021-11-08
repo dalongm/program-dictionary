@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1222px" preserveAspectRatio="none" style="width:1352px;height:1222px;background:#FFFFFF;" version="1.1" viewBox="0 0 1352 1222" width="1352px" zoomAndPan="magnify"><defs><filter height="300%" id="fdxyu05p462xe" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="207.2808" style="stroke:#A80036;stroke-width:1.0;" width="10" x="391.5" y="124.8745"/><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="31.7544" style="stroke:#A80036;stroke-width:1.0;" width="10" x="573.5" y="156.6289"/><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="430.3159" style="stroke:#A80036;stroke-width:1.0;" width="10" x="737" y="426.4185"/><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="192.772" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1037" y="933.2432"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="22" x2="22" y1="91.1201" y2="1135.0151"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="396" x2="396" y1="91.1201" y2="1135.0151"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="578" x2="578" y1="91.1201" y2="1135.0151"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="742" x2="742" y1="91.1201" y2="1135.0151"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1041.5" x2="1041.5" y1="91.1201" y2="1135.0151"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5" y="88.0439">User</text><ellipse cx="22.5" cy="15" fill="#FEFECE" filter="url(#fdxyu05p462xe)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M22.5,23 L22.5,50 M9.5,31 L35.5,31 M22.5,50 L9.5,65 M22.5,50 L35.5,65 " fill="none" filter="url(#fdxyu05p462xe)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5" y="1150.0591">User</text><ellipse cx="22.5" cy="1163.1353" fill="#FEFECE" filter="url(#fdxyu05p462xe)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M22.5,1171.1353 L22.5,1198.1353 M9.5,1179.1353 L35.5,1179.1353 M22.5,1198.1353 L9.5,1213.1353 M22.5,1198.1353 L35.5,1213.1353 " fill="none" filter="url(#fdxyu05p462xe)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="155" x="317" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="324" y="76.0439">Authentication Service</text><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="155" x="317" y="1134.0151"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="324" y="1157.0591">Authentication Service</text><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="137" x="508" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="515" y="76.0439">Kerberos Database</text><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="137" x="508" y="1134.0151"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="515" y="1157.0591">Kerberos Database</text><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="162" x="659" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="666" y="76.0439">Ticket Granting Service</text><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="162" x="659" y="1134.0151"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="666" y="1157.0591">Ticket Granting Service</text><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="101" x="989.5" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="996.5" y="76.0439">HTTP Service</text><rect fill="#FEFECE" filter="url(#fdxyu05p462xe)" height="33.1201" style="stroke:#A80036;stroke-width:1.5;" width="101" x="989.5" y="1134.0151"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="996.5" y="1157.0591">HTTP Service</text><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="207.2808" style="stroke:#A80036;stroke-width:1.0;" width="10" x="391.5" y="124.8745"/><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="31.7544" style="stroke:#A80036;stroke-width:1.0;" width="10" x="573.5" y="156.6289"/><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="430.3159" style="stroke:#A80036;stroke-width:1.0;" width="10" x="737" y="426.4185"/><rect fill="#FFFFFF" filter="url(#fdxyu05p462xe)" height="192.772" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1037" y="933.2432"/><polygon fill="#A80036" points="379.5,120.8745,389.5,124.8745,379.5,128.8745,383.5,124.8745" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="385.5" y1="124.8745" y2="124.8745"/><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="29.5" y="120.0181">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="72.5" y="120.0181">, TGS ID, IP, Lifetime</text><polygon fill="#A80036" points="561.5,152.6289,571.5,156.6289,561.5,160.6289,565.5,156.6289" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="401.5" x2="567.5" y1="156.6289" y2="156.6289"/><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="408.5" y="151.7725">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="455.5" y="151.7725">in KDC ?</text><polygon fill="#A80036" points="412.5,184.3833,402.5,188.3833,412.5,192.3833,408.5,188.3833" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="406.5" x2="577.5" y1="188.3833" y2="188.3833"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="418.5" y="183.5269">Yes</text><line style="stroke:#A80036;stroke-width:1.0;" x1="401.5" x2="443.5" y1="220.1377" y2="220.1377"/><line style="stroke:#A80036;stroke-width:1.0;" x1="443.5" x2="443.5" y1="220.1377" y2="233.1377"/><line style="stroke:#A80036;stroke-width:1.0;" x1="402.5" x2="443.5" y1="233.1377" y2="233.1377"/><polygon fill="#A80036" points="412.5,229.1377,402.5,233.1377,412.5,237.1377,408.5,233.1377" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="408.5" y="215.2813">generate</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="462.5" y="215.2813">TGS Session Key</text><polygon fill="#A80036" points="33.5,278.6465,23.5,282.6465,33.5,286.6465,29.5,282.6465" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="27.5" x2="390.5" y1="282.6465" y2="282.6465"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="227" x="39.5" y="260.0356">1.1 TGT: encrypt with TGS Secret Key,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="39.5" y="277.79">include</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="84.5" y="277.79">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="127.5" y="277.79">,</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="135.5" y="277.79">TGS Session Key</text><polygon fill="#A80036" points="33.5,328.1553,23.5,332.1553,33.5,336.1553,29.5,332.1553" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="27.5" x2="395.5" y1="332.1553" y2="332.1553"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="247" x="39.5" y="309.5444">1.2 another: encrypt with User Secret Key,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="39.5" y="327.2988">include HTTP Service ID,</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="186.5" y="327.2988">TGS Session Key</text><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="64.5" y1="381.6641" y2="381.6641"/><line style="stroke:#A80036;stroke-width:1.0;" x1="64.5" x2="64.5" y1="381.6641" y2="394.6641"/><line style="stroke:#A80036;stroke-width:1.0;" x1="23.5" x2="64.5" y1="394.6641" y2="394.6641"/><polygon fill="#A80036" points="33.5,390.6641,23.5,394.6641,33.5,398.6641,29.5,394.6641" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="234" x="29.5" y="359.0532">decrypt 1.2 another by User Secret Key,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="29.5" y="376.8076">get</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="51.5" y="376.8076">TGS Session Key</text><polygon fill="#A80036" points="725,422.4185,735,426.4185,725,430.4185,729,426.4185" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="731" y1="426.4185" y2="426.4185"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="29.5" y="421.562">2.1 HTTP Service ID, Lifetime</text><polygon fill="#A80036" points="725,471.9272,735,475.9272,725,479.9272,729,475.9272" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="731" y1="475.9272" y2="475.9272"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177" x="29.5" y="453.3164">2.2 Authenticator: encrypt with</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="210.5" y="453.3164">TGS Session Key</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="314.5" y="453.3164">,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="29.5" y="471.0708">include</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="74.5" y="471.0708">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="117.5" y="471.0708">, Timestamp</text><polygon fill="#A80036" points="725,503.6816,735,507.6816,725,511.6816,729,507.6816" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="731" y1="507.6816" y2="507.6816"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="29.5" y="502.8252">2.3 TGT</text><line style="stroke:#A80036;stroke-width:1.0;" x1="747" x2="789" y1="557.1904" y2="557.1904"/><line style="stroke:#A80036;stroke-width:1.0;" x1="789" x2="789" y1="557.1904" y2="570.1904"/><line style="stroke:#A80036;stroke-width:1.0;" x1="748" x2="789" y1="570.1904" y2="570.1904"/><polygon fill="#A80036" points="758,566.1904,748,570.1904,758,574.1904,754,570.1904" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="214" x="754" y="534.5796">decrypt 2.3 TGT by TGS Secret Key,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="754" y="552.334">get</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="776" y="552.334">TGS Session Key</text><line style="stroke:#A80036;stroke-width:1.0;" x1="747" x2="789" y1="619.6992" y2="619.6992"/><line style="stroke:#A80036;stroke-width:1.0;" x1="789" x2="789" y1="619.6992" y2="632.6992"/><line style="stroke:#A80036;stroke-width:1.0;" x1="748" x2="789" y1="632.6992" y2="632.6992"/><polygon fill="#A80036" points="758,628.6992,748,632.6992,758,636.6992,754,632.6992" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164" x="754" y="597.0884">decrypt 2.2 Authenticator by</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="922" y="597.0884">TGS Session Key</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="1026" y="597.0884">,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="754" y="614.8428">get</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="776" y="614.8428">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="819" y="614.8428">, Timestamp</text><line style="stroke:#A80036;stroke-width:1.0;" x1="747" x2="789" y1="682.208" y2="682.208"/><line style="stroke:#A80036;stroke-width:1.0;" x1="789" x2="789" y1="682.208" y2="695.208"/><line style="stroke:#A80036;stroke-width:1.0;" x1="748" x2="789" y1="695.208" y2="695.208"/><polygon fill="#A80036" points="758,691.208,748,695.208,758,699.208,754,695.208" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="754" y="659.5972">compare</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="808" y="659.5972">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="150" x="851" y="659.5972">, Timestamp, TGT expire?</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="754" y="677.3516">Authenticator in TGS's cache</text><line style="stroke:#A80036;stroke-width:1.0;" x1="747" x2="789" y1="726.9624" y2="726.9624"/><line style="stroke:#A80036;stroke-width:1.0;" x1="789" x2="789" y1="726.9624" y2="739.9624"/><line style="stroke:#A80036;stroke-width:1.0;" x1="748" x2="789" y1="739.9624" y2="739.9624"/><polygon fill="#A80036" points="758,735.9624,748,739.9624,758,743.9624,754,739.9624" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="754" y="722.106">generate</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="808" y="722.106">HTTP Session Key</text><polygon fill="#A80036" points="33.5,803.2256,23.5,807.2256,33.5,811.2256,29.5,807.2256" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="27.5" x2="736" y1="807.2256" y2="807.2256"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="39.5" y="766.8604">3.1 HTTP Ticket: encrypt with http service secret key,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="39.5" y="784.6147">include</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="84.5" y="784.6147">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="127.5" y="784.6147">, HTTP Service ID, IP address,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161" x="39.5" y="802.3691">timestamp, lifetime, and the</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="204.5" y="802.3691">TGS Session Key</text><polygon fill="#A80036" points="33.5,852.7344,23.5,856.7344,33.5,860.7344,29.5,856.7344" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="27.5" x2="741" y1="856.7344" y2="856.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="256" x="39.5" y="834.1235">3.2 HTTP Service Session Key: encrypt with</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="299.5" y="834.1235">TGS Session Key</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="403.5" y="834.1235">,</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="39.5" y="851.8779">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="82.5" y="851.8779">, Timestamp</text><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="64.5" y1="888.4888" y2="888.4888"/><line style="stroke:#A80036;stroke-width:1.0;" x1="64.5" x2="64.5" y1="888.4888" y2="901.4888"/><line style="stroke:#A80036;stroke-width:1.0;" x1="23.5" x2="64.5" y1="901.4888" y2="901.4888"/><polygon fill="#A80036" points="33.5,897.4888,23.5,901.4888,33.5,905.4888,29.5,901.4888" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="29.5" y="883.6323">decrypt 3.2 HTTP Service Session Key with</text><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="285.5" y="883.6323">TGS Session Key</text><polygon fill="#A80036" points="1025,929.2432,1035,933.2432,1025,937.2432,1029,933.2432" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="1031" y1="933.2432" y2="933.2432"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="29.5" y="928.3867">4.1 HTTP Ticket</text><polygon fill="#A80036" points="1025,960.9976,1035,964.9976,1025,968.9976,1029,964.9976" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="22.5" x2="1031" y1="964.9976" y2="964.9976"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177" x="29.5" y="960.1411">4.2 Authenticator: encrypt with</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="210.5" y="960.1411">HTTP Session Key</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1047" x2="1089" y1="996.752" y2="996.752"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1089" x2="1089" y1="996.752" y2="1009.752"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1048" x2="1089" y1="1009.752" y2="1009.752"/><polygon fill="#A80036" points="1058,1005.752,1048,1009.752,1058,1013.752,1054,1009.752" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="166" x="1054" y="991.8955">decrypt 4.1 HTTP Ticket, get</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="1224" y="991.8955">HTTP Session Key</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1047" x2="1089" y1="1041.5063" y2="1041.5063"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1089" x2="1089" y1="1041.5063" y2="1054.5063"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1048" x2="1089" y1="1054.5063" y2="1054.5063"/><polygon fill="#A80036" points="1058,1050.5063,1048,1054.5063,1058,1058.5063,1054,1054.5063" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="1054" y="1036.6499">decrypt 4.2 Authenticator, get</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="1230" y="1036.6499">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="1273" y="1036.6499">, Timestamp</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1047" x2="1089" y1="1104.0151" y2="1104.0151"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1089" x2="1089" y1="1104.0151" y2="1117.0151"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1048" x2="1089" y1="1117.0151" y2="1117.0151"/><polygon fill="#A80036" points="1058,1113.0151,1048,1117.0151,1058,1121.0151,1054,1117.0151" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="1054" y="1081.4043">compare</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="1108" y="1081.4043">User ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161" x="1151" y="1081.4043">, Timestamp, Ticket expire?</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="215" x="1054" y="1099.1587">Authenticator in HTTP Server's cache</text><!--MD5=[9df7a2e7d1529b11a84e9479ae88aef3]
+@startuml Kerberos
+' hide footbox
+
+'participant "Key Distribution Center" as kdc
+actor User as user
+participant "Authentication Service" as ats
+participant "Kerberos Database" as kd
+participant "Ticket Granting Service" as tgs
+participant "HTTP Service" as hs
+
+
+user -> ats : <color:blue>User ID</color>, TGS ID, IP, Lifetime
+activate ats
+ats -> kd : <color:blue>User ID</color> in KDC ?
+
+activate kd
+
+ats <- kd : Yes
+deactivate kd
+
+ats -> ats : generate <color:red>TGS Session Key</color>
+
+user <- ats : 1.1 TGT: encrypt with TGS Secret Key,\ninclude <color:blue>User ID</color>, <color:red>TGS Session Key</color>
+
+user <- ats : 1.2 another: encrypt with User Secret Key,\ninclude HTTP Service ID, <color:red>TGS Session Key</color>
+
+deactivate ats
+
+user -> user : decrypt 1.2 another by User Secret Key,\nget <color:red>TGS Session Key</color>
+
+
+
+user -> tgs : 2.1 HTTP Service ID, Lifetime
+activate tgs
+user -> tgs : 2.2 Authenticator: encrypt with <color:red>TGS Session Key</color>,\ninclude <color:blue>User ID</color>, Timestamp
+user -> tgs : 2.3 TGT
+
+
+tgs -> tgs : decrypt 2.3 TGT by TGS Secret Key,\nget <color:red>TGS Session Key</color>
+
+tgs -> tgs : decrypt 2.2 Authenticator by <color:red>TGS Session Key</color>,\nget <color:blue>User ID</color>, Timestamp
+
+
+tgs -> tgs : compare <color:blue>User ID</color>, Timestamp, TGT expire?\nAuthenticator in TGS's cache
+
+tgs -> tgs : generate <color:green>HTTP Session Key</color>
+
+tgs -> user : 3.1 HTTP Ticket: encrypt with http service secret key,\ninclude <color:blue>User ID</color>, HTTP Service ID, IP address,\ntimestamp, lifetime, and the <color:red>TGS Session Key</color>
+
+tgs -> user : 3.2 HTTP Service Session Key: encrypt with <color:red>TGS Session Key</color>,\n<color:blue>User ID</color>, Timestamp
+
+deactivate tgs
+
+user -> user : decrypt 3.2 HTTP Service Session Key with <color:red>TGS Session Key</color>
+
+user -> hs : 4.1 HTTP Ticket
+
+activate hs
+
+user -> hs : 4.2 Authenticator: encrypt with <color:green>HTTP Session Key</color>
+
+hs -> hs : decrypt 4.1 HTTP Ticket, get <color:green>HTTP Session Key</color>
+
+hs -> hs : decrypt 4.2 Authenticator, get <color:blue>User ID</color>, Timestamp
+
+hs -> hs : compare <color:blue>User ID</color>, Timestamp, Ticket expire?\nAuthenticator in HTTP Server's cache
+
+' user <- hs : OK
+
+@enduml
+
+@startuml Kerberos
+
+actor User as user
+participant "Authentication Service" as ats
+participant "Kerberos Database" as kd
+participant "Ticket Granting Service" as tgs
+participant "HTTP Service" as hs
+
+
+user -> ats : <color:blue>User ID</color>, TGS ID, IP, Lifetime
+activate ats
+ats -> kd : <color:blue>User ID</color> in KDC ?
+
+activate kd
+
+ats <- kd : Yes
+deactivate kd
+
+ats -> ats : generate <color:red>TGS Session Key</color>
+
+user <- ats : 1.1 TGT: encrypt with TGS Secret Key,\ninclude <color:blue>User ID</color>, <color:red>TGS Session Key</color>
+
+user <- ats : 1.2 another: encrypt with User Secret Key,\ninclude HTTP Service ID, <color:red>TGS Session Key</color>
+
+deactivate ats
+
+user -> user : decrypt 1.2 another by User Secret Key,\nget <color:red>TGS Session Key</color>
+
+
+
+user -> tgs : 2.1 HTTP Service ID, Lifetime
+activate tgs
+user -> tgs : 2.2 Authenticator: encrypt with <color:red>TGS Session Key</color>,\ninclude <color:blue>User ID</color>, Timestamp
+user -> tgs : 2.3 TGT
+
+
+tgs -> tgs : decrypt 2.3 TGT by TGS Secret Key,\nget <color:red>TGS Session Key</color>
+
+tgs -> tgs : decrypt 2.2 Authenticator by <color:red>TGS Session Key</color>,\nget <color:blue>User ID</color>, Timestamp
+
+
+tgs -> tgs : compare <color:blue>User ID</color>, Timestamp, TGT expire?\nAuthenticator in TGS's cache
+
+tgs -> tgs : generate <color:green>HTTP Session Key</color>
+
+tgs -> user : 3.1 HTTP Ticket: encrypt with http service secret key,\ninclude <color:blue>User ID</color>, HTTP Service ID, IP address,\ntimestamp, lifetime, and the <color:red>TGS Session Key</color>
+
+tgs -> user : 3.2 HTTP Service Session Key: encrypt with <color:red>TGS Session Key</color>,\n<color:blue>User ID</color>, Timestamp
+
+deactivate tgs
+
+user -> user : decrypt 3.2 HTTP Service Session Key with <color:red>TGS Session Key</color>
+
+user -> hs : 4.1 HTTP Ticket
+
+activate hs
+
+user -> hs : 4.2 Authenticator: encrypt with <color:green>HTTP Session Key</color>
+
+hs -> hs : decrypt 4.1 HTTP Ticket, get <color:green>HTTP Session Key</color>
+
+hs -> hs : decrypt 4.2 Authenticator, get <color:blue>User ID</color>, Timestamp
+
+hs -> hs : compare <color:blue>User ID</color>, Timestamp, Ticket expire?\nAuthenticator in HTTP Server's cache
+
+
+@enduml
+
+PlantUML version 1.2021.12(Wed Oct 06 00:01:58 CST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>

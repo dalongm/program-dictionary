@@ -2,9 +2,7 @@
 
 [TOC]
 
-
-
-## 安装Git
+## 源码安装 Git
 
 ### 下载
 
@@ -56,6 +54,51 @@ git reset HEAD^
 git reset HEAD^
 ```
 
+## 配置
+
+### 修改默认编辑器
+
+以sublime为例，需将`sublime_text.exe`的路径添加到环境变量中。
+
+```shell
+git config --global core.editor sublime_text.exe
+```
+
+### 查看用户名和邮箱地址
+
+```shell
+git config user.name
+git config user.email
+```
+
+### 修改全局用户名和邮箱地址
+
+```shell
+git config --global user.name "username"
+git config --global user.email "email"
+```
+
+
+### 文件换行格式
+
+```shell
+# 提交时转换为LF，检出时不转换
+git config --global core.autocrlf input
+# 拒绝提交包含混合换行符的文件
+git config --global core.safecrlf true
+```
+
+### 设置代理
+
+```bash
+# 设置代理
+git config --global http.proxy http://proxy.example.cn:3128
+
+
+# 取消代理
+git config --global --unset http.proxy
+```
+
 ## 子模块
 
 ```bash
@@ -70,72 +113,60 @@ git submodule init ${子模块名称}
 # 更新子模块
 git submodule update ${子模块名称}
 
+# 更新所有子模块
+git submodule update
+
 # 方法二：在使用git clone命令时，加上–recurse-submodules或–recursive 这样的递归参数
 git clone --recursive ${主仓库地址}
 ```
 
+```bash
+# 递归克隆
+git clone --recursive https://github.com/ClickHouse/ClickHouse.git
 
-
-## .修改默认编辑器
-
-以sublime为例，需将`sublime_text.exe`的路径添加到环境变量中。
-
-```shell
-git config --global core.editor sublime_text.exe
+# 更新所有子模块
+git submodule update
 ```
 
-## 修改已commit的注释信息
+
+## 提交
+
+### 修改已commit的注释信息
 
 ```shell
 git commit --amend
 ```
 
-## 查看用户名和邮箱地址
-
-```shell
-git config user.name
-git config user.email
-```
-
-## 修改用户名和邮箱地址
-
-```shell
-git config --global user.name "username"
-git config --global user.email "email"
-```
-
-## 文件换行格式
-
-```shell
-# 提交时转换为LF，检出时不转换
-git config --global core.autocrlf input
-# 拒绝提交包含混合换行符的文件
-git config --global core.safecrlf true
-```
-
-## 查看所有的提交记录
+### 查看所有的提交记录
 
 ```shell
 git log
 ```
 
-## 查看最新的commit
+### 查看最新的commit
 
 ```shell
 git show
 ```
 
-## 查看指定commit hashID的所有修改
+### 查看指定commit hashID的所有修改
 
 ```shell
 git show commitId
 ```
 
-## 查看某次commit中具体某个文件的修改
+### 查看某次commit中具体某个文件的修改
 
 ```shell
 git show commitId fileName
 ```
+
+### 修改 comment
+
+```shell
+git commit --amend
+```
+
 
 ## 回到与远程仓库一致处
 
@@ -201,13 +232,6 @@ git push origin dev-01
 ```
 
 
-
-## 修改 comment
-
-```shell
-git commit --amend
-```
-
 ## 清除本地的新增文件（未add）
 
 ```shell
@@ -216,29 +240,36 @@ git clean -df
 
 ## 统计代码行数
 
-统计代码行数，从2020-01-01到2020-07-30的代码行数（排除dependence目录）
+### 统计时间范围代码行数
+
+，从2020-01-01到2020-07-30的代码行数（排除dependence目录）
 
 ```bash
 git log --pretty=tformat: --since="2020-01-01" --until="2020-07-30" --numstat -- . ":(exclude)dependence"| awk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s new lines: %s\n",add,subs,loc }'
 ```
 
-统计个人代码行数
+### 统计个人代码行数
 
 ```bash
 git log  --author="songyang" --since="2020-01-01" --until="2020-07-30" --pretty=tformat:  --numstat -- . ":(exclude)static/built" ":(exclude)static/bower_components" | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'  
 ```
 
->
->
->author: 作者，
->
->since: 起始时间
->
->until: 结束时间
->
->-- . ":(exclude)folderName" 排除文件夹
->
->-- . ":(exclude)folderName1" ":(exclude)folderName2" 排除多个文件夹
+说明：
+
+```
+author: 作者
+
+since: 起始时间
+
+until: 结束时间
+
+-- . ":(exclude)folderName" 排除文件夹
+
+-- . ":(exclude)folderName1" ":(exclude)folderName2" 排除多个文件夹
+```
+
+
+
 
 ## 常见问题
 
@@ -260,6 +291,10 @@ git config --global i18n.logoutputencoding utf-8
 export LESSCHARSET=utf-8
 ```
 
+### 子模块拉取失败
+
+1. 删除对应目录
+2. 删除`.git/modules/`中对应目录
 
 
 ## Git LFS
@@ -353,3 +388,4 @@ git config --global core.fileMode false
 
 
 [^1]:  https://docs.gitlab.com/ee/administration/lfs/manage_large_binaries_with_git_lfs.html 
+

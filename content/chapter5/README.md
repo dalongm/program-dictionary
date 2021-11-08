@@ -7,3 +7,5 @@
 * [5.5 Flume](Flume.md)
 * [5.6 Zookeeper](Zookeeper.md)
 * [5.7 Flink](Flink.md)
+* [5.8 Kerberos](Kerberos.md)
+

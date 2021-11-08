@@ -140,3 +140,26 @@ mysql> show variables like "max_connections";
 show status;
 ```
 
+## Windows MySQL 57 忘记密码
+
+```bash
+net stop mysql
+
+mysqld --defaults-file="C:\ProgramData\MySQL\MySQL Server 5.7\my.ini" --skip-grant-tables
+```
+
+新开窗口
+
+```bash
+mysql -uroot -p
+# 直接回车
+show databases;
+
+use mysql;
+
+update user set authentication_string=password('123456') where user='root';
+
+FLUSH PRIVILEGES;
+
+quit
+```

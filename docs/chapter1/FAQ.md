@@ -27,7 +27,12 @@ systemctl start systemd-logind
 ### 磁盘占用
 
 ```bash
+# 进程磁盘占用
 iotop -oP
+pidstat -d 1
+
+# 各硬盘占用
+iostat -x 1 10
 ```
 
 ### 内存
