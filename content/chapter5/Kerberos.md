@@ -167,5 +167,6 @@ hs -> hs : compare <color:blue>User ID</color>, Timestamp, Ticket expire?\nAuthe
 ## 参考资料
 
 [^1]: [看完您如果还不明白 Kerberos 原理，算我输！](https://cloud.tencent.com/developer/article/1496451)
-[^2]:[Explain like I'm 5: Kerberos – roguelynn](https://www.roguelynn.com/words/explain-like-im-5-kerberos/)
+
+[^2]: [Explain like I'm 5: Kerberos – roguelynn](https://www.roguelynn.com/words/explain-like-im-5-kerberos/)
 
